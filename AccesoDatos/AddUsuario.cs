@@ -6,10 +6,10 @@ namespace AccesoDatos
 {
     public class AddUsuario
     {
-        ConexiónBDD conexióBDD = new ConexiónBDD();
+        ConexiónBDD conexiónBDD = new ConexiónBDD();
         public int InsertarUsuario(User_Login DatosUsuario)
         {
-            using (SqlConnection Conexión = conexióBDD.ObtenerConexión())
+            using (SqlConnection Conexión = conexiónBDD.ObtenerConexión())
             {
                 Conexión.Open();
                 string Consulta = @"INSERT INTO User_Login (Usuario, Contraseña) VALUES (@Usuario, @Contraseña); SELECT SCOPE_IDENTITY();";

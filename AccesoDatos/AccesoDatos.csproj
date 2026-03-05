@@ -41,7 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUsuario.cs" />
+    <Compile Include="ConexiónBDD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidaciónUsuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{88BF7DA4-3986-467E-AFE1-C278E2BE0387}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
