@@ -11,12 +11,11 @@ namespace AccesoDatos
         {
             using (SqlConnection Conexión = conexiónBDD.ObtenerConexión())
             {
-                Conexión.Open();
                 string Consulta = @"INSERT INTO User_Login (usuario, Contraseña) VALUES (@usuario, @Contraseña); SELECT SCOPE_IDENTITY();";
 
                 SqlCommand AgregarUsuario = new SqlCommand(Consulta, Conexión);
 
-                AgregarUsuario.Parameters.AddWithValue("@usuario", DatosUsuario.Usuario);
+                AgregarUsuario.Parameters.AddWithValue("@usuario", DatosUsuario.usuario);
                 AgregarUsuario.Parameters.AddWithValue("@Contraseña", DatosUsuario.Contraseña);
 
                 int IdAgregado = Convert.ToInt32(AgregarUsuario.ExecuteScalar());

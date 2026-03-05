@@ -184,6 +184,7 @@
             this.Btn_Login.TabIndex = 13;
             this.Btn_Login.Text = "Login";
             this.Btn_Login.UseVisualStyleBackColor = true;
+            this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
             // Btn_Crear
             // 
@@ -194,6 +195,7 @@
             this.Btn_Crear.TabIndex = 14;
             this.Btn_Crear.Text = "Crear";
             this.Btn_Crear.UseVisualStyleBackColor = true;
+            this.Btn_Crear.Click += new System.EventHandler(this.Btn_Crear_Click);
             // 
             // Btn_Cerrar
             // 
