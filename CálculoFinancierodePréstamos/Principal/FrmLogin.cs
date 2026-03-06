@@ -101,5 +101,28 @@ namespace CálculoFinancierodePréstamos.Principal
         {
 
         }
+
+        private void Btn_VerContraseña_Click(object sender, EventArgs e)
+        {
+            if (TxtBox_Contraseña.PasswordChar == '*')
+            {
+                TxtBox_Contraseña.PasswordChar = '\0';
+                Btn_NoVerContraseña.BringToFront();
+            }
+        }
+
+        private void Btn_NoVerContraseña_Click(object sender, EventArgs e)
+        {
+            if (TxtBox_Contraseña.PasswordChar == '\0')
+            {
+                TxtBox_Contraseña.PasswordChar = '*';
+                Btn_VerContraseña.BringToFront();
+            }
+        }
+
+        private void Btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

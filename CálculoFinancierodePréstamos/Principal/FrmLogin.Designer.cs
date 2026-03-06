@@ -154,6 +154,7 @@
             this.TxtBox_Contraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBox_Contraseña.Location = new System.Drawing.Point(129, 240);
             this.TxtBox_Contraseña.Name = "TxtBox_Contraseña";
+            this.TxtBox_Contraseña.PasswordChar = '*';
             this.TxtBox_Contraseña.Size = new System.Drawing.Size(175, 28);
             this.TxtBox_Contraseña.TabIndex = 10;
             // 
@@ -166,6 +167,7 @@
             this.Btn_VerContraseña.TabIndex = 11;
             this.Btn_VerContraseña.Text = "ver";
             this.Btn_VerContraseña.UseVisualStyleBackColor = true;
+            this.Btn_VerContraseña.Click += new System.EventHandler(this.Btn_VerContraseña_Click);
             // 
             // Btn_NoVerContraseña
             // 
@@ -176,6 +178,7 @@
             this.Btn_NoVerContraseña.TabIndex = 12;
             this.Btn_NoVerContraseña.Text = "no";
             this.Btn_NoVerContraseña.UseVisualStyleBackColor = true;
+            this.Btn_NoVerContraseña.Click += new System.EventHandler(this.Btn_NoVerContraseña_Click);
             // 
             // Btn_Login
             // 
@@ -208,6 +211,7 @@
             this.Btn_Cerrar.TabIndex = 15;
             this.Btn_Cerrar.Text = "Cerrar";
             this.Btn_Cerrar.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
             // ProgressBar_Fallos
             // 
