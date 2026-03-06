@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.ProgressBar_Fallos = new System.Windows.Forms.ProgressBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.Timer_ProgressBar = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -213,6 +215,7 @@
             this.ProgressBar_Fallos.Name = "ProgressBar_Fallos";
             this.ProgressBar_Fallos.Size = new System.Drawing.Size(491, 23);
             this.ProgressBar_Fallos.TabIndex = 16;
+            this.ProgressBar_Fallos.Click += new System.EventHandler(this.ProgressBar_Fallos_Click);
             // 
             // label9
             // 
@@ -233,6 +236,10 @@
             this.label10.Size = new System.Drawing.Size(49, 15);
             this.label10.TabIndex = 18;
             this.label10.Text = "Título #6";
+            // 
+            // Timer_ProgressBar
+            // 
+            this.Timer_ProgressBar.Tick += new System.EventHandler(this.Timer_ProgressBar_Tick);
             // 
             // FrmLogin
             // 
@@ -288,5 +295,6 @@
         private System.Windows.Forms.ProgressBar ProgressBar_Fallos;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Timer Timer_ProgressBar;
     }
 }

@@ -10,7 +10,6 @@ namespace AccesoDatos
         {
             using (SqlConnection Conexión = conexiónBDD.ObtenerConexión())
             {
-                Conexión.Open();
                 string Consulta = @"SELECT COUNT(*) FROM User_Login WHERE usuario = @usuario AND Contraseña = @Contraseña";
 
                 SqlCommand LoginUsarioExistente = new SqlCommand(Consulta, Conexión);
