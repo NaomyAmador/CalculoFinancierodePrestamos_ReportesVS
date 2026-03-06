@@ -70,7 +70,7 @@ namespace CálculoFinancierodePréstamos.Principal
                 Btn_Cerrar.Enabled = false;
                 ProgressBar_Fallos.Value = 0;
                 Tiempo = 0;
-                Lbl_TextoBarradeEspera.Text = "Espere unos 15 segundos...";
+                Lbl_TextoBarradeEspera.Text = "Espere mientras procesamos los fallos...";
                 Timer_ProgressBar.Start();
             }
         }
