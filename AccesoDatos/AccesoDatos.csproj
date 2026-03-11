@@ -45,6 +45,7 @@
     <Compile Include="ConexiónBDD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidaciónUsuario.cs" />
+    <Compile Include="ValidarCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
