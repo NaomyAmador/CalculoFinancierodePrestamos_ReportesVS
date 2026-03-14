@@ -7,7 +7,7 @@ namespace AccesoDatos
     public class ValidarCliente
     {
         ConexiónBDD ConexionBD = new ConexiónBDD();
-        public bool ValidarClientes(string IdCliente)
+        public bool ValidarClientes( int IdCliente)
         {
             using (SqlConnection Conexión = ConexionBD.ObtenerConexión())
             {
@@ -22,4 +22,4 @@ namespace AccesoDatos
 
         }
     }
-}
+} 
