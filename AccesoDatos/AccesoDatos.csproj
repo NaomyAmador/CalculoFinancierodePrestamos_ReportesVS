@@ -44,6 +44,7 @@
     <Compile Include="ActualizarCliente.cs" />
     <Compile Include="AddUsuario.cs" />
     <Compile Include="ConexiónBDD.cs" />
+    <Compile Include="HistorialPrestamos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidaciónUsuario.cs" />
     <Compile Include="ValidarCliente.cs" />
