@@ -21,9 +21,7 @@ namespace LógicaNegocio
                     bool existeCliente = validarCliente.ValidarClientes(clientes.IdCliente);
 
                     if (!existeCliente)
-                    {
                         throw new Exception("El cliente no existe.");
-                    }
 
                     int resultado = actualizarCliente.ActualizarClientes(clientes, conexion, transaccion);
 
@@ -31,7 +29,7 @@ namespace LógicaNegocio
 
                     return resultado;
                 }
-                catch (Exception)
+                catch
                 {
                     transaccion.Rollback();
                     throw;
@@ -40,6 +38,8 @@ namespace LógicaNegocio
         }
     }
 }
+    
+
 
 
 

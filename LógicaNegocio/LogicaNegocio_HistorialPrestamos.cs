@@ -18,10 +18,13 @@ namespace LógicaNegocio
             {
                 throw new Exception("El cliente no existe.");
             }
+            else
+            {
 
-            List<Préstamos> historial = historialPrestamos.ObtenerHistorialPrestamos(idCliente);
+                List<Préstamos> historial = historialPrestamos.ObtenerHistorialPrestamos(idCliente);
 
-            return historial;
+                return historial;
+            }
         }
 
     }

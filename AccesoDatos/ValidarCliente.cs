@@ -7,17 +7,18 @@ namespace AccesoDatos
     public class ValidarCliente
     {
         ConexiónBDD ConexionBD = new ConexiónBDD();
-        public bool ValidarClientes( int IdCliente)
+        public bool ValidarClientes(int IdCliente)
         {
-            using (SqlConnection Conexión = ConexionBD.ObtenerConexión())
+            using (SqlConnection conexion = ConexionBD.ObtenerConexión())
             {
-                string Consulta = @"SELECT COUNT(*) FROM Clientes WHERE IdCliente = @IdCliente ";
+                string Consulta = "SELECT COUNT(*) FROM Clientes WHERE IdCliente = @IdCliente";
 
-                SqlCommand ValidarClienteExistente = new SqlCommand(Consulta, Conexión);
-                ValidarClienteExistente.Parameters.AddWithValue("@IdCliente", IdCliente);
-                
-                int Validación = Convert.ToInt32(ValidarClienteExistente.ExecuteScalar());
-                return Validación > 0;
+                SqlCommand comando = new SqlCommand(Consulta, conexion);
+                comando.Parameters.AddWithValue("@IdCliente", IdCliente);
+
+                int cantidad = (int)comando.ExecuteScalar();
+
+                return cantidad > 0;
             }
 
         }

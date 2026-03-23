@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="LogicaNegocio_HistorialPrestamos.cs" />
     <Compile Include="LógicaNegocio_ActualizarCliente.cs" />
+    <Compile Include="LógicaNegocio_Cliente.cs" />
     <Compile Include="LógicaNegocio_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

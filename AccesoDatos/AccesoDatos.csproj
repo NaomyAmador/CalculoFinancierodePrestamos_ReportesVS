@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidaciónUsuario.cs" />
     <Compile Include="ValidarCliente.cs" />
+    <Compile Include="VerCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
