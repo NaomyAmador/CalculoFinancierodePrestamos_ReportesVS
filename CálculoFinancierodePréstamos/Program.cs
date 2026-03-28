@@ -15,7 +15,7 @@ namespace CálculoFinancierodePréstamos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmActualizarCliente()
+            Application.Run(new FrmLogin()
             {
 
             });
