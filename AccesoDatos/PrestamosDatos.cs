@@ -12,6 +12,32 @@ namespace AccesoDatos
     public class PrestamosDatos
     {
         ConexiónBDD con = new ConexiónBDD();
+        public decimal ObtenerFondoEmpresa()
+        {
+            decimal fondo = 0;
+            using (SqlConnection Conexión = con.ObtenerConexión())
+            {
+                string consulta = "SELECT CantidadDisponible FROM FondosDisponibles";
+                SqlCommand cmd = new SqlCommand(consulta, Conexión);
+                object resultado = cmd.ExecuteScalar();
+                if (resultado != null) fondo = Convert.ToDecimal(resultado);
+            }
+            return fondo;
+        }
+        public int ContarMorasPorCliente(int idCliente)
+        {
+            int totalMoras = 0;
+            string sql = "SELECT COUNT(*) FROM Moras WHERE IdCliente = @id";
+
+            using (SqlConnection Conexion = con.ObtenerConexión())
+            {
+                SqlCommand cmd = new SqlCommand(sql, Conexion);
+                cmd.Parameters.AddWithValue("@id", idCliente);
+                
+                totalMoras = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            return totalMoras;
+        }
         public bool AddPrestamo(Préstamos p, List<Cuotas> cuotas)
         {
             using (SqlConnection Conexión = con.ObtenerConexión())
@@ -67,6 +93,28 @@ namespace AccesoDatos
 
             }
         }
-         
+        public List<Entidades.Clientes> ListarClientes()
+        {
+            List<Entidades.Clientes> lista = new List<Entidades.Clientes>();
+            string sql = "SELECT IdCliente, Nombre, Sueldo FROM Clientes"; // Ajusta a tus nombres de columna
+
+            using (SqlConnection conexion = con.ObtenerConexión())
+            {
+                SqlCommand cmd = new SqlCommand(sql, conexion);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lista.Add(new Entidades.Clientes
+                    {
+                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                        NombreCompleto = reader["NombreCompleto"].ToString(),
+                        SueldoMensual = Convert.ToInt32(reader["SueldoMensual"])
+                    });
+                }
+            }
+            return lista;
+        }
+
     }
 }

@@ -2,8 +2,10 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LógicaNegocio
@@ -12,12 +14,30 @@ namespace LógicaNegocio
     {
         PrestamosDatos Prestamo = new PrestamosDatos();
 
-        public bool ValidarReglas(int sueldo, int monto, int FondoDisponible, int limiteSueldo, int cantidadMoras)
+        public decimal ConsultarFondoBanco()
         {
-            return monto <= (sueldo * 4);
+            return Prestamo.ObtenerFondoEmpresa();
         }
 
-        public decimal ObtenerTasa(int meses)
+        public string ValidarReglas(decimal sueldo, decimal montoPedido, decimal FondoBanco, int cantidadMoras)
+        {
+            if (cantidadMoras >= 3) 
+                return "DENEGADO: Cliente con 3 o más moras.";
+            if (montoPedido > (sueldo * 4)) 
+                return "DENEGADO: El monto excede 4 veces el sueldo mensual.";
+            if (montoPedido >FondoBanco) 
+                return "DENEGADO: El banco no tiene fondos suficientes.";
+
+
+            return "OK";
+        }
+
+        public int ObtenerCantidadMoras(int idCliente)
+        {
+            return Prestamo.ContarMorasPorCliente(idCliente);
+        }
+
+        public decimal ObtenerTasaTEA(int meses)
         {
             if (meses >= 12)
                 return 13.25m;
@@ -26,48 +46,60 @@ namespace LógicaNegocio
 
             return 30m;
         }
-
-        public decimal CalcularInteresSimple(decimal Capital, decimal TasaAnual, int meses)
+        
+        public double CalcularTEM(double teaAnual)
         {
-           double i = (double)(TasaAnual / 12 / 100);
-           double n = meses;
-           double P = (double)Capital;
-           double InteresSimple = P * ( 1(i * Math.Pow(1 + i, n)) / (Math.Pow(1 + i, n) - 1) );
-        //    return (decimal)cuota;
+            return Math.Pow(1 + (teaAnual / 100), 1.0 / 12.0) - 1;
+        }
 
-        //}
-        //public List<Cuotas> GenerarCuotas(decimal CapitalOriginal, int meses)
-        //{
-        //    var ListarCuotas = new List<Cuotas>();
+        public double CalcularCuotaFija(decimal principal, double tem, int meses)
+        {
+            double P = (double)principal;
+            double i = tem;
+            int n = meses;
 
-        //    decimal TasaAnual = ObtenerTasa(meses);
-        //    decimal CuotaFija = CalcularMonto(CapitalOriginal, TasaAnual, meses);
-        //    decimal TasaMensual = TasaAnual / 12 / 100;
+            double cuotas = (P * i) / (1 - Math.Pow(1 + i, -n));
+            return cuotas;
+        }
 
-        //    decimal SaldoPendiente = CapitalOriginal;
+        public List<Cuotas> GenerarCuotas(decimal MontoPrestamo, double tea, int meses)
+        { 
+            List<Cuotas> cuotas = new List<Cuotas>();
 
-        //    for (int i = 1; i <= meses; i++)
-        //    {
-        //        decimal InteresdelMes = SaldoPendiente * TasaMensual;
-        //        decimal AbonoalCapital = CuotaFija - InteresdelMes;
-        //        SaldoPendiente -= AbonoalCapital;
+            double i = CalcularTEM(tea);
+            double CuotaFija = CalcularCuotaFija(MontoPrestamo,i,meses);
 
-        //        if (SaldoPendiente < 0 ) SaldoPendiente = 0;
+            decimal SaldoAnterior = MontoPrestamo;
 
-        //        Cuotas NewCuota = new Cuotas()
-        //        {
-        //            NumeroDeCuota = i,
-        //            MontoCuota = (int)Math.Round(CuotaFija),
-        //            InteresCuota = InteresdelMes,
-        //            AbonoCapital = (int)Math.Round(AbonoalCapital),
-        //            SaldoRemanente = (int)Math.Round(SaldoPendiente),
-        //            FechaVencimiento = DateTime.Now.AddMonths(i),
-        //            Estado = "Pendiente"
-        //        };
-        //        ListarCuotas.Add(NewCuota);
-        //    }
-        //    return ListarCuotas;
-        //}
+            for (int mes = 1; mes <= meses; mes++)
+            {
+                double InteresesDelMes = (double)SaldoAnterior * i;
+                double AmortizacionCapital = CuotaFija - InteresesDelMes;
+                decimal NuevoSaldo = SaldoAnterior - (decimal)AmortizacionCapital;
+
+                cuotas.Add(new Cuotas
+                {
+                    NumeroDeCuota = mes,
+                    MontoCuota = decimal.Round((decimal) CuotaFija, 2),
+                    InteresCuota = decimal.Round((decimal) InteresesDelMes, 2),
+                    AbonoCapital = decimal.Round((decimal) AmortizacionCapital, 2),
+                    SaldoRemanente = decimal.Round(Math.Max(0, NuevoSaldo), 2)
+                });
+
+                SaldoAnterior = NuevoSaldo;
+            
+            }
+            return cuotas;
+
+        }
+        public bool GuardarPrestamoCompleto(Préstamos p, List<Cuotas> lista)
+        {
+            return Prestamo.AddPrestamo(p, lista);
+        }
+        public List<Entidades.Clientes> ObtenerTodosLosClientes()
+        {
+            return Prestamo.ListarClientes();
+        }
 
 
     }
