@@ -96,7 +96,7 @@ namespace AccesoDatos
         public List<Entidades.Clientes> ListarClientes()
         {
             List<Entidades.Clientes> lista = new List<Entidades.Clientes>();
-            string sql = "SELECT IdCliente, Nombre, Sueldo FROM Clientes"; // Ajusta a tus nombres de columna
+            string sql = "SELECT IdCliente, NombreCompleto, SueldoMensual FROM Clientes"; // Ajusta a tus nombres de columna
 
             using (SqlConnection conexion = con.ObtenerConexión())
             {

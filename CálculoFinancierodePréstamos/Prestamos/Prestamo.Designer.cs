@@ -56,7 +56,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.cmb_nombre = new System.Windows.Forms.ComboBox();
             this.txt_id = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbl_id = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txt_sueldo = new System.Windows.Forms.TextBox();
@@ -157,7 +157,7 @@
             // 
             this.cmb_tiempoA.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tiempoA.FormattingEnabled = true;
-            this.cmb_tiempoA.Location = new System.Drawing.Point(508, 349);
+            this.cmb_tiempoA.Location = new System.Drawing.Point(508, 393);
             this.cmb_tiempoA.Name = "cmb_tiempoA";
             this.cmb_tiempoA.Size = new System.Drawing.Size(121, 29);
             this.cmb_tiempoA.TabIndex = 10;
@@ -258,11 +258,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(312, 350);
+            this.label10.Location = new System.Drawing.Point(318, 399);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 23);
+            this.label10.Size = new System.Drawing.Size(147, 23);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Tiempo:";
+            this.label10.Text = "Plazo/Tiempo:";
             // 
             // label11
             // 
@@ -363,16 +363,16 @@
             this.txt_id.Size = new System.Drawing.Size(63, 28);
             this.txt_id.TabIndex = 29;
             // 
-            // label15
+            // lbl_id
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label15.Location = new System.Drawing.Point(346, 99);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 23);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "Id:";
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbl_id.Location = new System.Drawing.Point(346, 99);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(35, 23);
+            this.lbl_id.TabIndex = 30;
+            this.lbl_id.Text = "Id:";
             // 
             // label16
             // 
@@ -390,7 +390,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label17.Location = new System.Drawing.Point(346, 152);
+            this.label17.Location = new System.Drawing.Point(435, 151);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(101, 23);
             this.label17.TabIndex = 32;
@@ -407,7 +407,7 @@
             // txt_garantia
             // 
             this.txt_garantia.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_garantia.Location = new System.Drawing.Point(449, 147);
+            this.txt_garantia.Location = new System.Drawing.Point(547, 146);
             this.txt_garantia.Name = "txt_garantia";
             this.txt_garantia.Size = new System.Drawing.Size(147, 28);
             this.txt_garantia.TabIndex = 34;
@@ -431,16 +431,16 @@
             this.label19.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label19.Location = new System.Drawing.Point(848, 102);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(165, 23);
+            this.label19.Size = new System.Drawing.Size(211, 29);
             this.label19.TabIndex = 36;
-            this.label19.Text = "Limite prestado:";
+            this.label19.Text = "Limite Prestamo:";
             // 
             // txt_LimitePrestamo
             // 
             this.txt_LimitePrestamo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_LimitePrestamo.Location = new System.Drawing.Point(1019, 101);
             this.txt_LimitePrestamo.Name = "txt_LimitePrestamo";
-            this.txt_LimitePrestamo.Size = new System.Drawing.Size(147, 28);
+            this.txt_LimitePrestamo.Size = new System.Drawing.Size(201, 28);
             this.txt_LimitePrestamo.TabIndex = 37;
             // 
             // label20
@@ -459,7 +459,7 @@
             this.txt_MontoBanco.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MontoBanco.Location = new System.Drawing.Point(1019, 146);
             this.txt_MontoBanco.Name = "txt_MontoBanco";
-            this.txt_MontoBanco.Size = new System.Drawing.Size(147, 28);
+            this.txt_MontoBanco.Size = new System.Drawing.Size(201, 28);
             this.txt_MontoBanco.TabIndex = 39;
             // 
             // mora
@@ -486,7 +486,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label21.Location = new System.Drawing.Point(312, 399);
+            this.label21.Location = new System.Drawing.Point(312, 349);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(162, 23);
             this.label21.TabIndex = 42;
@@ -496,7 +496,7 @@
             // 
             this.cmb_TipoDeTiempo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_TipoDeTiempo.FormattingEnabled = true;
-            this.cmb_TipoDeTiempo.Location = new System.Drawing.Point(508, 398);
+            this.cmb_TipoDeTiempo.Location = new System.Drawing.Point(508, 349);
             this.cmb_TipoDeTiempo.Name = "cmb_TipoDeTiempo";
             this.cmb_TipoDeTiempo.Size = new System.Drawing.Size(121, 29);
             this.cmb_TipoDeTiempo.TabIndex = 43;
@@ -532,7 +532,7 @@
             this.Controls.Add(this.txt_sueldo);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.cmb_nombre);
             this.Controls.Add(this.label14);
@@ -601,7 +601,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmb_nombre;
         private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_sueldo;

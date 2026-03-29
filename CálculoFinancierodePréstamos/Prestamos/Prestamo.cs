@@ -16,7 +16,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
     public partial class Prestamo : Form
     {
         LogicaNegocios_Prestamos guardar = new LogicaNegocios_Prestamos();
-        Prestamo datos = new Prestamo();
+        
         public Prestamo()
         {
             InitializeComponent();
@@ -53,7 +53,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
         {
             decimal fondo = guardar.ConsultarFondoBanco();
             txt_MontoBanco.Text = fondo.ToString("N2");
-            txt_MontoBanco.ForeColor = (fondo < 10000) ? Color.Red : Color.Black;
+            txt_MontoBanco.ForeColor = (fondo < 1000000000) ? Color.Red : Color.Black;
             txt_MontoBanco.Enabled = false;
         }
 
@@ -63,12 +63,24 @@ namespace CálculoFinancierodePréstamos.Prestamos
             {
                 var cliente = (Entidades.Clientes)cmb_nombre.SelectedItem;
 
-                txt_id.Visible = false;
                 txt_id.Text = cliente.IdCliente.ToString();
                 txt_sueldo.Text = cliente.SueldoMensual.ToString("N2");
 
+                decimal fondoBanco = guardar.ConsultarFondoBanco();
+                decimal limitePorSueldo = cliente.SueldoMensual * 4;
+                decimal limiteRealFinal = Math.Min(limitePorSueldo, fondoBanco);
+
+                txt_LimitePrestamo.Text = limiteRealFinal.ToString("N2");
+                txt_LimitePrestamo.Enabled = false;
+
                 int CantidadMoras = guardar.ObtenerCantidadMoras(cliente.IdCliente);
                 txt_moras.Text = CantidadMoras.ToString();
+                txt_moras.Enabled = false;
+
+                txt_tea.Enabled = false;
+                lbl_id.Visible = false;
+                txt_id.Visible = false;
+                txt_sueldo.Enabled = false;
 
                 txt_garantia.Clear();
                 dgv_Cuotas.DataSource = null;
@@ -131,7 +143,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
         {
             ActualizarFondoBanco();
             cmb_nombre.DataSource = guardar.ObtenerTodosLosClientes();
-            cmb_nombre.DisplayMember = "Nombre";    
+            cmb_nombre.DisplayMember = "NombreCompleto";    
             cmb_nombre.ValueMember = "IdCliente";   
 
             cmb_nombre.SelectedIndex = -1;
