@@ -161,6 +161,7 @@
             this.cmb_tiempoA.Name = "cmb_tiempoA";
             this.cmb_tiempoA.Size = new System.Drawing.Size(121, 29);
             this.cmb_tiempoA.TabIndex = 10;
+            this.cmb_tiempoA.SelectedIndexChanged += new System.EventHandler(this.cmb_tiempoA_SelectedIndexChanged);
             // 
             // dgv_Cuotas
             // 
@@ -500,6 +501,7 @@
             this.cmb_TipoDeTiempo.Name = "cmb_TipoDeTiempo";
             this.cmb_TipoDeTiempo.Size = new System.Drawing.Size(121, 29);
             this.cmb_TipoDeTiempo.TabIndex = 43;
+            this.cmb_TipoDeTiempo.SelectedIndexChanged += new System.EventHandler(this.cmb_TipoDeTiempo_SelectedIndexChanged);
             // 
             // btn_imprimir
             // 

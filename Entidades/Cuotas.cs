@@ -13,7 +13,7 @@ namespace Entidades
         public int NumeroDeCuota { get; set; }
         public decimal MontoCuota { get; set; } // cambio a decimal
         public decimal InteresCuota { get; set; } // cambio a decimal
-        public decimal AbonoCapital { get; set; } // cambio a decimal
+        public decimal AbonoCapital { get; set; } // cambio a decimal             
         public decimal SaldoRemanente { get; set; } // cambio a decimal
         public DateTime FechaVencimiento { get; set; }
         public string Estado { get; set; }

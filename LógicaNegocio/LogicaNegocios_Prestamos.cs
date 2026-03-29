@@ -31,7 +31,17 @@ namespace LógicaNegocio
 
             return "OK";
         }
+        public decimal CalcularMontoConMora(decimal montoCuota, DateTime fechaVencimiento)
+        {
+            // Si la fecha de hoy es mayor a la de vencimiento, aplicamos el 10%
+            if (DateTime.Now > fechaVencimiento)
+            {
+                decimal mora = montoCuota * 0.10m;
+                return montoCuota + mora;
+            }
 
+            return montoCuota; // Paga normal si está a tiempo
+        }
         public int ObtenerCantidadMoras(int idCliente)
         {
             return Prestamo.ContarMorasPorCliente(idCliente);
@@ -39,12 +49,19 @@ namespace LógicaNegocio
 
         public decimal ObtenerTasaTEA(int meses)
         {
-            if (meses >= 12)
-                return 13.25m;
-            if (meses > 12 && meses <= 24)
+            if (meses > 24)
+            {
+                return 30m;
+            }
+
+            if (meses > 12 ) 
+            {
                 return 15m;
 
-            return 30m;
+            }
+
+            return 13.25m;
+            
         }
         
         public double CalcularTEM(double teaAnual)

@@ -1,4 +1,5 @@
 ﻿using CálculoFinancierodePréstamos.Principal;
+using Entidades;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace CálculoFinancierodePréstamos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Prestamos.Prestamo());
+            Application.Run(new Prestamos.Prestamo(new User_Login()));
         }
     }
 }

@@ -24,6 +24,25 @@ namespace AccesoDatos
             }
             return fondo;
         }
+        public bool RegistrarMora(int idCliente, int idCuota, decimal montoCuota)
+        {
+            
+            decimal montoMora = montoCuota * 0.10m;
+
+            string sql = "INSERT INTO Moras (IdCliente, IdCuota, MontoMora, Fecha) " +
+                         "VALUES (@IdCliente, @IdCuota, @MontoMora, @Fecha)";
+
+            using (SqlConnection Conexion = con.ObtenerConexión())
+            {
+                SqlCommand cmd = new SqlCommand(sql, Conexion);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd.Parameters.AddWithValue("@IdCuota", idCuota);
+                cmd.Parameters.AddWithValue("@MontoMora", montoMora);
+                cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+        }
         public int ContarMorasPorCliente(int idCliente)
         {
             int totalMoras = 0;
