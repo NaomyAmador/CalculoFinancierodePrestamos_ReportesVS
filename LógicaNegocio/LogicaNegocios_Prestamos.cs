@@ -79,7 +79,7 @@ namespace LógicaNegocio
             return cuotas;
         }
 
-        public List<Cuotas> GenerarCuotas(decimal MontoPrestamo, double tea, int meses)
+        public List<Cuotas> GenerarCuotas(decimal MontoPrestamo, double tea, int meses, DateTime FechaInicio)
         { 
             List<Cuotas> cuotas = new List<Cuotas>();
 
@@ -100,7 +100,9 @@ namespace LógicaNegocio
                     MontoCuota = decimal.Round((decimal) CuotaFija, 2),
                     InteresCuota = decimal.Round((decimal) InteresesDelMes, 2),
                     AbonoCapital = decimal.Round((decimal) AmortizacionCapital, 2),
-                    SaldoRemanente = decimal.Round(Math.Max(0, NuevoSaldo), 2)
+                    SaldoRemanente = decimal.Round(Math.Max(0, NuevoSaldo), 2),
+
+                    FechaVencimiento = FechaInicio.AddMonths(mes)
                 });
 
                 SaldoAnterior = NuevoSaldo;

@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Globalization;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -81,6 +82,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
                 txt_moras.Text = CantidadMoras.ToString();
                 txt_moras.Enabled = false;
 
+
                 txt_tea.Enabled = false;
                 lbl_id.Visible = false;
                 txt_id.Visible = false;
@@ -99,8 +101,20 @@ namespace CálculoFinancierodePréstamos.Prestamos
         {
             try
             {
-                decimal MontoDeseado = decimal.Parse(txt_MontoBanco.Text);
-                decimal sueldo = decimal.Parse(txt_sueldo.Text);
+                if (string.IsNullOrEmpty(txt_MontoBanco.Text) || string.IsNullOrEmpty(txt_sueldo.Text))
+                {
+                    MessageBox.Show("Por favor, llene el monto y el sueldo.");
+                    return;
+                }
+                
+                string montoLimpio = txt_MontoDeseado.Text.Replace(",", "").Replace("$", "").Trim();
+                string sueldoLimpio = txt_sueldo.Text.Replace(",", "").Replace("$", "").Trim();
+
+                
+                decimal MontoDeseado = decimal.Parse(montoLimpio, System.Globalization.CultureInfo.InvariantCulture);
+                decimal sueldo = decimal.Parse(sueldoLimpio, System.Globalization.CultureInfo.InvariantCulture);
+
+
                 decimal FondoActual = guardar.ConsultarFondoBanco();
 
                 int moras = int.Parse(txt_moras.Text);
@@ -108,6 +122,10 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
                 int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
                 int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
+                
+                DateTime FechaInicio = dtp_FechaPrimerPago.Value;
+
+
                 string ResultadoValidacion = guardar.ValidarReglas(sueldo, MontoDeseado, FondoActual, moras);
 
                 if (ResultadoValidacion == "OK")
@@ -115,10 +133,23 @@ namespace CálculoFinancierodePréstamos.Prestamos
                     decimal tea = guardar.ObtenerTasaTEA(MesesFinales);
                     txt_tea.Enabled = false;
                     txt_tea.Text = tea.ToString();
+                    txt_TiempoM.Text = MesesFinales.ToString();
+                    double tem = guardar.CalcularTEM((double)tea);
+                    txt_tem.Text = (tem * 100).ToString("N2") + "%";
 
-                    var ListaCuotas = guardar.GenerarCuotas(MontoDeseado, (double)tea, MesesFinales);
+
+                    var ListaCuotas = guardar.GenerarCuotas(MontoDeseado, (double)tea, MesesFinales,FechaInicio);
                     dgv_Cuotas.DataSource = null;
                     dgv_Cuotas.DataSource = ListaCuotas;
+
+                    if (dgv_Cuotas.Columns["FechaVencimiento"] != null)
+                    {
+                        dgv_Cuotas.Columns["FechaVencimiento"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                        dgv_Cuotas.Columns["FechaVencimiento"].HeaderText = "F. Vencimiento";
+                    }
+
+                    // Alinear montos a la derecha
+                    dgv_Cuotas.Columns["MontoCuota"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
                     txt_CuotasCalculadas.Text = ListaCuotas.Sum(c => c.MontoCuota).ToString("N2");
 
@@ -134,7 +165,8 @@ namespace CálculoFinancierodePréstamos.Prestamos
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: Verifique que los campos numéricos estén correctos. " + ex.Message);
+                MessageBox.Show("Error: Verifique que los campos numéricos estén correctos. Detalles: " + ex.Message,
+                        "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void LimpiarPantalla()
@@ -157,13 +189,16 @@ namespace CálculoFinancierodePréstamos.Prestamos
                 
                 decimal tea = guardar.ObtenerTasaTEA(mesesFinales);
 
-                txt_tea.Text = tea.ToString("N2");
+                txt_tea.Text = tea.ToString("N2") + "%";
                 txt_tea.Enabled = false;
             }
         }
 
         private void Prestamo_Load(object sender, EventArgs e)
         {
+            dtp_FechaPrimerPago.MinDate = DateTime.Today;
+            dtp_FechaPrimerPago.Value = DateTime.Today.AddMonths(1);
+
             ActualizarFondoBanco();
             cmb_nombre.DataSource = guardar.ObtenerTodosLosClientes();
             cmb_nombre.DisplayMember = "NombreCompleto";    

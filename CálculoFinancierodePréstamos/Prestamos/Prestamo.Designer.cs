@@ -71,6 +71,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.cmb_TipoDeTiempo = new System.Windows.Forms.ComboBox();
             this.btn_imprimir = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dtp_FechaPrimerPago = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cuotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -120,7 +122,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(312, 268);
+            this.label4.Location = new System.Drawing.Point(313, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(189, 23);
             this.label4.TabIndex = 5;
@@ -140,7 +142,7 @@
             // txt_MontoDeseado
             // 
             this.txt_MontoDeseado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MontoDeseado.Location = new System.Drawing.Point(508, 267);
+            this.txt_MontoDeseado.Location = new System.Drawing.Point(508, 249);
             this.txt_MontoDeseado.Name = "txt_MontoDeseado";
             this.txt_MontoDeseado.Size = new System.Drawing.Size(229, 28);
             this.txt_MontoDeseado.TabIndex = 8;
@@ -157,7 +159,7 @@
             // 
             this.cmb_tiempoA.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tiempoA.FormattingEnabled = true;
-            this.cmb_tiempoA.Location = new System.Drawing.Point(508, 393);
+            this.cmb_tiempoA.Location = new System.Drawing.Point(508, 384);
             this.cmb_tiempoA.Name = "cmb_tiempoA";
             this.cmb_tiempoA.Size = new System.Drawing.Size(121, 29);
             this.cmb_tiempoA.TabIndex = 10;
@@ -197,7 +199,7 @@
             this.btn_calcular.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_calcular.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_calcular.ForeColor = System.Drawing.Color.White;
-            this.btn_calcular.Location = new System.Drawing.Point(518, 493);
+            this.btn_calcular.Location = new System.Drawing.Point(879, 435);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(289, 33);
             this.btn_calcular.TabIndex = 14;
@@ -236,7 +238,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label8.Location = new System.Drawing.Point(313, 228);
+            this.label8.Location = new System.Drawing.Point(313, 218);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(294, 36);
             this.label8.TabIndex = 17;
@@ -259,7 +261,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(318, 399);
+            this.label10.Location = new System.Drawing.Point(313, 390);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(147, 23);
             this.label10.TabIndex = 19;
@@ -270,7 +272,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label11.Location = new System.Drawing.Point(312, 308);
+            this.label11.Location = new System.Drawing.Point(313, 296);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(43, 23);
             this.label11.TabIndex = 20;
@@ -279,7 +281,7 @@
             // txt_tea
             // 
             this.txt_tea.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tea.Location = new System.Drawing.Point(508, 308);
+            this.txt_tea.Location = new System.Drawing.Point(508, 291);
             this.txt_tea.Name = "txt_tea";
             this.txt_tea.Size = new System.Drawing.Size(229, 28);
             this.txt_tea.TabIndex = 21;
@@ -432,7 +434,7 @@
             this.label19.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label19.Location = new System.Drawing.Point(848, 102);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(211, 29);
+            this.label19.Size = new System.Drawing.Size(169, 23);
             this.label19.TabIndex = 36;
             this.label19.Text = "Limite Prestamo:";
             // 
@@ -487,7 +489,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label21.Location = new System.Drawing.Point(312, 349);
+            this.label21.Location = new System.Drawing.Point(313, 339);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(162, 23);
             this.label21.TabIndex = 42;
@@ -497,7 +499,7 @@
             // 
             this.cmb_TipoDeTiempo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_TipoDeTiempo.FormattingEnabled = true;
-            this.cmb_TipoDeTiempo.Location = new System.Drawing.Point(508, 349);
+            this.cmb_TipoDeTiempo.Location = new System.Drawing.Point(508, 339);
             this.cmb_TipoDeTiempo.Name = "cmb_TipoDeTiempo";
             this.cmb_TipoDeTiempo.Size = new System.Drawing.Size(121, 29);
             this.cmb_TipoDeTiempo.TabIndex = 43;
@@ -515,11 +517,34 @@
             this.btn_imprimir.Text = "Imprimir Reporte";
             this.btn_imprimir.UseVisualStyleBackColor = false;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label15.Location = new System.Drawing.Point(313, 476);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(163, 46);
+            this.label15.TabIndex = 45;
+            this.label15.Text = "Fecha de Inicio\r\n/Día de cobro :";
+            // 
+            // dtp_FechaPrimerPago
+            // 
+            this.dtp_FechaPrimerPago.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_FechaPrimerPago.Location = new System.Drawing.Point(508, 485);
+            this.dtp_FechaPrimerPago.MinDate = new System.DateTime(2026, 3, 28, 22, 26, 7, 0);
+            this.dtp_FechaPrimerPago.Name = "dtp_FechaPrimerPago";
+            this.dtp_FechaPrimerPago.Size = new System.Drawing.Size(250, 28);
+            this.dtp_FechaPrimerPago.TabIndex = 46;
+            this.dtp_FechaPrimerPago.Value = new System.DateTime(2026, 3, 28, 22, 26, 7, 0);
+            // 
             // Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 1011);
+            this.Controls.Add(this.dtp_FechaPrimerPago);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.cmb_TipoDeTiempo);
             this.Controls.Add(this.label21);
@@ -618,5 +643,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cmb_TipoDeTiempo;
         private System.Windows.Forms.Button btn_imprimir;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DateTimePicker dtp_FechaPrimerPago;
     }
 }
