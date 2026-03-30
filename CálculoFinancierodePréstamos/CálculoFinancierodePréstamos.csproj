@@ -99,8 +99,23 @@
     <EmbeddedResource Include="Clientes\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormAbonarCuota.resx">
+      <DependentUpon>FormAbonarCuota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenúPrincipal\FormMenúPrincipal.resx">
       <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormPréstamosTomados.resx">
+      <DependentUpon>FormPréstamosTomados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormSolicitudPréstamos.resx">
+      <DependentUpon>FormSolicitudPréstamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormVerCientes.resx">
+      <DependentUpon>FormVerCientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

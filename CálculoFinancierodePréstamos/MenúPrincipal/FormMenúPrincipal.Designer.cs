@@ -111,7 +111,7 @@
             this.Lbl_Decoración4.AutoSize = true;
             this.Lbl_Decoración4.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Decoración4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Lbl_Decoración4.Location = new System.Drawing.Point(242, 96);
+            this.Lbl_Decoración4.Location = new System.Drawing.Point(243, 96);
             this.Lbl_Decoración4.Name = "Lbl_Decoración4";
             this.Lbl_Decoración4.Size = new System.Drawing.Size(380, 17);
             this.Lbl_Decoración4.TabIndex = 4;
@@ -122,7 +122,7 @@
             this.Lbl_Decoración5.AutoSize = true;
             this.Lbl_Decoración5.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Decoración5.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Lbl_Decoración5.Location = new System.Drawing.Point(311, 119);
+            this.Lbl_Decoración5.Location = new System.Drawing.Point(313, 119);
             this.Lbl_Decoración5.Name = "Lbl_Decoración5";
             this.Lbl_Decoración5.Size = new System.Drawing.Size(224, 15);
             this.Lbl_Decoración5.TabIndex = 5;
@@ -159,7 +159,7 @@
             this.Lbl_Decoración8.Name = "Lbl_Decoración8";
             this.Lbl_Decoración8.Size = new System.Drawing.Size(959, 19);
             this.Lbl_Decoración8.TabIndex = 8;
-            this.Lbl_Decoración8.Text = "═ Querido Cliente, ¿Qué te gustaría ver/actualizar? ═════════════════════════════" +
+            this.Lbl_Decoración8.Text = "═ Querido Cliente, ¿Qué le gustaría ver/actualizar? ═════════════════════════════" +
     "═══════════════\r\n";
             // 
             // Btn_FormPréstamosTomados
