@@ -28,7 +28,8 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-                if (dgv_Cuotas.DataSource == null) return;
+            btn_guardar.Enabled = true;
+            if (dgv_Cuotas.DataSource == null) return;
 
                 int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
                 int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
@@ -154,6 +155,9 @@ namespace CálculoFinancierodePréstamos.Prestamos
                     txt_CuotasCalculadas.Text = ListaCuotas.Sum(c => c.MontoCuota).ToString("N2");
 
                     btn_guardar.Enabled = true;
+                    txt_tem.Enabled = false;
+                    txt_TiempoM.Enabled = false;
+                    txt_CuotasCalculadas.Enabled = false;
                 }
                 else
                 {
@@ -165,8 +169,9 @@ namespace CálculoFinancierodePréstamos.Prestamos
             }
             catch (Exception ex)
             {
+                //MessageBox.Show("Error real: " + ex.Message);
                 MessageBox.Show("Error: Verifique que los campos numéricos estén correctos. Detalles: " + ex.Message,
-                        "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void LimpiarPantalla()

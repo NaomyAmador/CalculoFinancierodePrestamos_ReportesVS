@@ -1,6 +1,7 @@
 ﻿using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
@@ -19,6 +20,8 @@ namespace AccesoDatos
             {
                 string consulta = "SELECT CantidadDisponible FROM FondosDisponibles";
                 SqlCommand cmd = new SqlCommand(consulta, Conexión);
+
+               
                 object resultado = cmd.ExecuteScalar();
                 if (resultado != null) fondo = Convert.ToDecimal(resultado);
             }
@@ -61,11 +64,14 @@ namespace AccesoDatos
         {
             using (SqlConnection Conexión = con.ObtenerConexión())
             {
+                if (Conexión.State != ConnectionState.Open)
+                    Conexión.Open();
+
                 SqlTransaction transaccion = Conexión.BeginTransaction();
                 try
                 {
-                    string Consulta1 = @"INSERT INTO Prestamos (IdCliente, IdUsuario, MontoCapital, plazoMeses, TasaInteresAplicada, MontoTotal, Garantia, Fecha) VALUES (@MontoCapital, @plazoMeses, @TasaInteresAplicada, @MontoTotal, @Garantia, @Fecha); SELECT SCOPE_IDENTITY();";
-                    SqlCommand AgregarPrestamo = new SqlCommand(Consulta1, Conexión);
+                    string Consulta1 = @"INSERT INTO Prestamos (IdCliente, IdUsuario, MontoCapital, plazoMeses, TasaInteresAplicada, MontoTotal, Garantia, Fecha) VALUES (@IdCliente, @IdUsuario, @MontoCapital, @plazoMeses, @TasaInteresAplicada, @MontoTotal, @Garantia, @Fecha); SELECT SCOPE_IDENTITY();";
+                    SqlCommand AgregarPrestamo = new SqlCommand(Consulta1, Conexión, transaccion);
 
                     AgregarPrestamo.Parameters.AddWithValue("@IdCliente", p.IdCliente);
                     AgregarPrestamo.Parameters.AddWithValue("@IdUsuario", p.IdUsuario);
@@ -83,8 +89,8 @@ namespace AccesoDatos
                         string Consulta2 = @"INSERT INTO Cuotas (IdPrestamo, NumeroDeCuota, MontoCuota, InteresCuota, AbonoCapital, SaldoRemanente, FechaVencimiento, Estado) VALUES (@IdPrestamo, @NumeroDeCuota, @MontoCuota, @InteresCuota, @AbonoCapital, @SaldoRemanente, @FechaVencimiento, @Estado); SELECT SCOPE_IDENTITY();";
                         SqlCommand AgregarCuota = new SqlCommand(Consulta2, Conexión, transaccion);
 
-                        AgregarCuota.Parameters.AddWithValue("@IdPrestamo", c.IdPrestamo);
-                        AgregarCuota.Parameters.AddWithValue("@NUmeroDeCuota", c.NumeroDeCuota);
+                        AgregarCuota.Parameters.AddWithValue("@IdPrestamo", IdPrestamoHecho);
+                        AgregarCuota.Parameters.AddWithValue("@NumeroDeCuota", c.NumeroDeCuota);
                         AgregarCuota.Parameters.AddWithValue("@MontoCuota", c.MontoCuota);
                         AgregarCuota.Parameters.AddWithValue("@InteresCuota", c.InteresCuota);
                         AgregarCuota.Parameters.AddWithValue("@AbonoCapital", c.AbonoCapital);
@@ -101,11 +107,12 @@ namespace AccesoDatos
                         Actualizar.ExecuteNonQuery();
                         transaccion.Commit();
                         return true;
-
+                   
                 }
                 catch (Exception)
                 {
                     transaccion.Rollback();
+                 
                     return false;
                 }
                
