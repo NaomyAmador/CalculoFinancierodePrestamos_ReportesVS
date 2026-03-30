@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="TxtNombreCliente">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NombreCompleto.Value, "DataSetInfocliente")</Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>DarkBlue</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>0.35278cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.41823cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line1">
+        <Top>1.12917cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0cm</Height>
+        <Width>11.56547cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>IDCliente: </Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>="MidnightBlue"</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!IdCliente.Value, "DataSetInfocliente")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>2.01552cm</Top>
+        <Left>0.35401cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.41823cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Sueldo: </Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!SueldoMensual.Value, "DataSetInfocliente")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox12</rd:DefaultName>
+        <Top>3.12139cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.89448cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Préstamo actual:</Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=FormatCurrency(First(Fields!MontoCapital.Value, "DataSetInfoClienteDatosPrestamo"), 2)</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>5.00406cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.6cm</Height>
+        <Width>6.13802cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Taza: </Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!TasaInteresAplicada.Value, "DataSetInfoClienteDatosPrestamo") &amp; "%"</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>7.01076cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.17229cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Plazo: </Value>
+                <Style>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!plazoMeses.Value, "DataSetInfoClienteDatosPrestamo") &amp; " meses"</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox15</rd:DefaultName>
+        <Top>6.01857cm</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.57156cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle2">
+        <ReportItems>
+          <Textbox Name="Textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Información de Préstamo</Value>
+                    <Style>
+                      <FontFamily>century gothic</FontFamily>
+                      <FontSize>18pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox16</rd:DefaultName>
+            <Top>0.28604cm</Top>
+            <Left>2.36485cm</Left>
+            <Height>0.79844cm</Height>
+            <Width>8.66479cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>7.97649cm</Top>
+        <Height>1.29615cm</Height>
+        <Width>12.96458cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>LightGrey</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Monto Prestado: </Value>
+                <Style>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=FormatCurrency(First(Fields!MontoCapital.Value, "DataSetInfoClienteDatosPrestamo"), 2)</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox17</rd:DefaultName>
+        <Top>9.9741cm</Top>
+        <Left>0.35401cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.19984cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TxtInteresGenerado">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Interés Generado: </Value>
+                <Style>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=FormatCurrency(First(Fields!MontoTotal.Value, "DataSetInfoClienteDatosPrestamo") - First(Fields!MontoCapital.Value, "DataSetInfoClienteDatosPrestamo"), 2)</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>Garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>10.86045cm</Top>
+        <Left>0.35401cm</Left>
+        <Height>0.6cm</Height>
+        <Width>8.00682cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Monto total: </Value>
+                <Style>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=FormatCurrency(First(Fields!MontoTotal.Value, "DataSetInfoClienteDatosPrestamo"), 2)</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontFamily>garamond</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox19</rd:DefaultName>
+        <Top>11.82618cm</Top>
+        <Left>0.35401cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.19984cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>5.45833in</Height>
+    <Style />
+  </Body>
+  <Width>5.10417in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.45273cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Detalle Del Cliente</Value>
+                  <Style>
+                    <FontFamily>Garamond</FontFamily>
+                    <FontSize>24pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>="White"</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.32314cm</Top>
+          <Left>0.31433cm</Left>
+          <Height>0.9532cm</Height>
+          <Width>7.23953cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+        <BackgroundColor>LightSteelBlue</BackgroundColor>
+      </Style>
+    </PageHeader>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="CalculoFinancierodeReportesDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>0a6ea783-f09b-45fd-99c3-2f016b983329</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="CalculoFinancierodeReportesDataSet1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>8e59a8bb-efa3-462b-b5a9-fc5c396b2c30</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSetInfocliente">
+      <Query>
+        <DataSourceName>CalculoFinancierodeReportesDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IdCliente">
+          <DataField>IdCliente</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IdUsuario">
+          <DataField>IdUsuario</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NombreCompleto">
+          <DataField>NombreCompleto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Correo">
+          <DataField>Correo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telefono">
+          <DataField>Telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SueldoMensual">
+          <DataField>SueldoMensual</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="EsMoroso">
+          <DataField>EsMoroso</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>CalculoFinancierodeReportesDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\domin\Desktop\Año Escolar 2025-2026\Trabajo reportes c#\CalculoFinancierodePrestamos_ReportesVS\CálculoFinancierodePréstamos\CalculoFinancierodeReportesDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>Clientes</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>ClientesTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DataSetInfoClienteDatosPrestamo">
+      <Query>
+        <DataSourceName>CalculoFinancierodeReportesDataSet1</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IdPrestamo">
+          <DataField>IdPrestamo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IdCliente">
+          <DataField>IdCliente</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IdUsuario">
+          <DataField>IdUsuario</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MontoCapital">
+          <DataField>MontoCapital</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="plazoMeses">
+          <DataField>plazoMeses</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TasaInteresAplicada">
+          <DataField>TasaInteresAplicada</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="MontoTotal">
+          <DataField>MontoTotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Garantia">
+          <DataField>Garantia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Estado">
+          <DataField>Estado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>CalculoFinancierodeReportesDataSet1</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\domin\Desktop\Año Escolar 2025-2026\Trabajo reportes c#\CalculoFinancierodePrestamos_ReportesVS\CálculoFinancierodePréstamos\CalculoFinancierodeReportesDataSet1.xsd</rd:SchemaPath>
+        <rd:TableName>Prestamos</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>PrestamosTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="EncabezadofrmReportesoago">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>699f2bc8-76ea-43c4-9919-56103d05947b</rd:ReportID>
+</Report>

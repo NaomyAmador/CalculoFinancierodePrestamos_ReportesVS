@@ -1,5 +1,6 @@
 ﻿using Entidades;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace AccesoDatos
@@ -33,6 +34,33 @@ namespace AccesoDatos
 
                 return null;
             }
+        }
+
+        public DataTable ObtenerDatosReportePorNombreUsuario(string nombreUsuario)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conexion = conexionBDD.ObtenerConexión())
+            {             
+                string query = @"SELECT 
+                            C.IdCliente,
+                            C.NombreCompleto, 
+                            C.Telefono as DNI, 
+                            C.SueldoMensual,
+                            P.MontoCapital, 
+                            P.PlazoMeses, 
+                            P.TasaInteresAplicada, 
+                            P.MontoTotal
+                         FROM User_Login U
+                         INNER JOIN Clientes C ON U.IdUsuario = C.IdUsuario
+                         INNER JOIN Prestamos P ON C.IdCliente = P.IdCliente
+                         WHERE U.usuario = @nombreUser";
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@nombreUser", nombreUsuario);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
         }
     }
 }

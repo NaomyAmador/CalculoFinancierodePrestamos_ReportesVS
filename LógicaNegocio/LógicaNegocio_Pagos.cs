@@ -50,42 +50,13 @@ namespace LógicaNegocio
 
                     
                     pagoAD.InsertarPago(pago, conexion, transaccion);
-
-
-                    if (mora > 0)
-                    {
-                        Moras nuevaMora = new Moras()
-                        {
-                            IdCliente = prestamo.IdCliente,
-                            IdCuota = cuota.IdCuota,
-                            MontoMora = mora,
-                            Fecha = DateTime.Now
-                        };
-
-                        new CuotasParaPago().InsertarMora(nuevaMora, conexion, transaccion);
-                    }
-
+                                                    
                    
                     new CuotasParaPago().MarcarCuotaComoPagada(cuota.IdCuota, conexion, transaccion);
 
                     int cantidadMoras = cuotaAD.ContarMorasCliente(prestamo.IdCliente, conexion, transaccion);
-                                                            
-                    if (mora > 0)
-                    {
-                        Moras nuevaMora = new Moras()
-                        {
-                            IdCliente = prestamo.IdCliente,
-                            IdCuota = cuota.IdCuota,
-                            MontoMora = mora,
-                            Fecha = DateTime.Now
-                        };
-
-                        cuotaAD.InsertarMora(nuevaMora, conexion, transaccion);
-                    }
-
-                    int CantidadMoras = cuotaAD.ContarMorasCliente(prestamo.IdCliente, conexion, transaccion);
-
-                   
+                 
+                                       
                     if (cantidadMoras >= 3 && !cuotaAD.EsClienteMoroso(prestamo.IdCliente, conexion, transaccion))
                     {
                         cuotaAD.MarcarComoMoroso(prestamo.IdCliente, conexion, transaccion);

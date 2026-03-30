@@ -48,7 +48,15 @@ namespace CálculoFinancierodePréstamos.Principal
 
             if (existe)
             {
-                FrmClientes form = new FrmClientes(TxtBox_Usuario.Text);
+                SesionUsuario.IdUsuarioLogueado = TxtBox_Usuario.Text;
+
+
+                //FrmClientes form = new FrmClientes(TxtBox_Usuario.Text);
+
+                // Esto es solo temporal para probar mi reporte de clientes 
+                FrmReporteInfoCliente form = new FrmReporteInfoCliente();
+
+
                 this.Hide();
                 form.Show();
                 Intentos = 3;
