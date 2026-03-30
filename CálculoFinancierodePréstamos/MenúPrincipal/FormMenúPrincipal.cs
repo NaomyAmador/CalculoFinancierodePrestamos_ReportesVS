@@ -27,7 +27,10 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormAbonarCuota_Click(object sender, EventArgs e)
         {
-            
+            FormAbonarCuota FormBotónNúmero2 = new FormAbonarCuota();
+            FormBotónNúmero2.Owner = this;
+            FormBotónNúmero2.Show();
+            this.Hide();
         }
 
         private void Btn_FormVerClientes_Click(object sender, EventArgs e)
