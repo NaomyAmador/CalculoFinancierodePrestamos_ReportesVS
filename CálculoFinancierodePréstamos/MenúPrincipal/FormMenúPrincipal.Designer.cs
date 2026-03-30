@@ -28,230 +28,230 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.PicBox_Decoración = new System.Windows.Forms.PictureBox();
+            this.Lbl_Decoración1 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración2 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración3 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración4 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración5 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración6 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración7 = new System.Windows.Forms.Label();
+            this.Lbl_Decoración8 = new System.Windows.Forms.Label();
+            this.Btn_FormPréstamosTomados = new System.Windows.Forms.Button();
+            this.Btn_FormSolicitudPréstamos = new System.Windows.Forms.Button();
+            this.Btn_FormReportes = new System.Windows.Forms.Button();
+            this.Btn_FormAbonarCuota = new System.Windows.Forms.Button();
+            this.Btn_FormVerClientes = new System.Windows.Forms.Button();
+            this.PicBox_DecoraciónBtn1 = new System.Windows.Forms.PictureBox();
+            this.PicBox_DecoraciónBtn4 = new System.Windows.Forms.PictureBox();
+            this.PicBox_DecoraciónBtn2 = new System.Windows.Forms.PictureBox();
+            this.PicBox_DecoraciónBtn5 = new System.Windows.Forms.PictureBox();
+            this.PicBox_DecoraciónBtn3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_Decoración)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PicBox_Decoración
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 126);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PicBox_Decoración.Location = new System.Drawing.Point(13, 13);
+            this.PicBox_Decoración.Name = "PicBox_Decoración";
+            this.PicBox_Decoración.Size = new System.Drawing.Size(146, 126);
+            this.PicBox_Decoración.TabIndex = 0;
+            this.PicBox_Decoración.TabStop = false;
             // 
-            // label1
+            // Lbl_Decoración1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.Lbl_Decoración1.AutoSize = true;
+            this.Lbl_Decoración1.Location = new System.Drawing.Point(162, 19);
+            this.Lbl_Decoración1.Name = "Lbl_Decoración1";
+            this.Lbl_Decoración1.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración1.TabIndex = 1;
+            this.Lbl_Decoración1.Text = "Lbl_Decoración1";
             // 
-            // label2
+            // Lbl_Decoración2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.Lbl_Decoración2.AutoSize = true;
+            this.Lbl_Decoración2.Location = new System.Drawing.Point(162, 44);
+            this.Lbl_Decoración2.Name = "Lbl_Decoración2";
+            this.Lbl_Decoración2.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración2.TabIndex = 2;
+            this.Lbl_Decoración2.Text = "Lbl_Decoración2";
             // 
-            // label3
+            // Lbl_Decoración3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.Lbl_Decoración3.AutoSize = true;
+            this.Lbl_Decoración3.Location = new System.Drawing.Point(165, 78);
+            this.Lbl_Decoración3.Name = "Lbl_Decoración3";
+            this.Lbl_Decoración3.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración3.TabIndex = 3;
+            this.Lbl_Decoración3.Text = "Lbl_Decoración3";
             // 
-            // label4
+            // Lbl_Decoración4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(165, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.Lbl_Decoración4.AutoSize = true;
+            this.Lbl_Decoración4.Location = new System.Drawing.Point(165, 98);
+            this.Lbl_Decoración4.Name = "Lbl_Decoración4";
+            this.Lbl_Decoración4.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración4.TabIndex = 4;
+            this.Lbl_Decoración4.Text = "Lbl_Decoración4";
             // 
-            // label5
+            // Lbl_Decoración5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(165, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.Lbl_Decoración5.AutoSize = true;
+            this.Lbl_Decoración5.Location = new System.Drawing.Point(165, 123);
+            this.Lbl_Decoración5.Name = "Lbl_Decoración5";
+            this.Lbl_Decoración5.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración5.TabIndex = 5;
+            this.Lbl_Decoración5.Text = "Lbl_Decoración5";
             // 
-            // label6
+            // Lbl_Decoración6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(694, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.Lbl_Decoración6.AutoSize = true;
+            this.Lbl_Decoración6.Location = new System.Drawing.Point(631, 14);
+            this.Lbl_Decoración6.Name = "Lbl_Decoración6";
+            this.Lbl_Decoración6.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración6.TabIndex = 6;
+            this.Lbl_Decoración6.Text = "Lbl_Decoración6";
             // 
-            // label7
+            // Lbl_Decoración7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(693, 43);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
+            this.Lbl_Decoración7.AutoSize = true;
+            this.Lbl_Decoración7.Location = new System.Drawing.Point(630, 44);
+            this.Lbl_Decoración7.Name = "Lbl_Decoración7";
+            this.Lbl_Decoración7.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración7.TabIndex = 7;
+            this.Lbl_Decoración7.Text = "Lbl_Decoración7";
             // 
-            // label8
+            // Lbl_Decoración8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 159);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.Lbl_Decoración8.AutoSize = true;
+            this.Lbl_Decoración8.Location = new System.Drawing.Point(13, 159);
+            this.Lbl_Decoración8.Name = "Lbl_Decoración8";
+            this.Lbl_Decoración8.Size = new System.Drawing.Size(109, 16);
+            this.Lbl_Decoración8.TabIndex = 8;
+            this.Lbl_Decoración8.Text = "Lbl_Decoración8";
             // 
-            // button1
+            // Btn_FormPréstamosTomados
             // 
-            this.button1.Location = new System.Drawing.Point(195, 468);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 35);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_FormPréstamosTomados.Location = new System.Drawing.Point(195, 468);
+            this.Btn_FormPréstamosTomados.Name = "Btn_FormPréstamosTomados";
+            this.Btn_FormPréstamosTomados.Size = new System.Drawing.Size(128, 35);
+            this.Btn_FormPréstamosTomados.TabIndex = 9;
+            this.Btn_FormPréstamosTomados.Text = "Btn_Form4";
+            this.Btn_FormPréstamosTomados.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Btn_FormSolicitudPréstamos
             // 
-            this.button2.Location = new System.Drawing.Point(81, 299);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 36);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_FormSolicitudPréstamos.Location = new System.Drawing.Point(81, 299);
+            this.Btn_FormSolicitudPréstamos.Name = "Btn_FormSolicitudPréstamos";
+            this.Btn_FormSolicitudPréstamos.Size = new System.Drawing.Size(128, 36);
+            this.Btn_FormSolicitudPréstamos.TabIndex = 10;
+            this.Btn_FormSolicitudPréstamos.Text = "Btn_Form1";
+            this.Btn_FormSolicitudPréstamos.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Btn_FormReportes
             // 
-            this.button3.Location = new System.Drawing.Point(437, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 34);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_FormReportes.Location = new System.Drawing.Point(437, 467);
+            this.Btn_FormReportes.Name = "Btn_FormReportes";
+            this.Btn_FormReportes.Size = new System.Drawing.Size(128, 34);
+            this.Btn_FormReportes.TabIndex = 11;
+            this.Btn_FormReportes.Text = "Btn_Form5";
+            this.Btn_FormReportes.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // Btn_FormAbonarCuota
             // 
-            this.button4.Location = new System.Drawing.Point(315, 303);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 35);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Btn_FormAbonarCuota.Location = new System.Drawing.Point(315, 303);
+            this.Btn_FormAbonarCuota.Name = "Btn_FormAbonarCuota";
+            this.Btn_FormAbonarCuota.Size = new System.Drawing.Size(128, 35);
+            this.Btn_FormAbonarCuota.TabIndex = 12;
+            this.Btn_FormAbonarCuota.Text = "Btn_Form2";
+            this.Btn_FormAbonarCuota.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Btn_FormVerClientes
             // 
-            this.button5.Location = new System.Drawing.Point(553, 303);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 33);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Btn_FormVerClientes.Location = new System.Drawing.Point(553, 303);
+            this.Btn_FormVerClientes.Name = "Btn_FormVerClientes";
+            this.Btn_FormVerClientes.Size = new System.Drawing.Size(128, 33);
+            this.Btn_FormVerClientes.TabIndex = 13;
+            this.Btn_FormVerClientes.Text = "Btn_Form3";
+            this.Btn_FormVerClientes.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // PicBox_DecoraciónBtn1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(81, 190);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 103);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.PicBox_DecoraciónBtn1.Location = new System.Drawing.Point(81, 190);
+            this.PicBox_DecoraciónBtn1.Name = "PicBox_DecoraciónBtn1";
+            this.PicBox_DecoraciónBtn1.Size = new System.Drawing.Size(128, 103);
+            this.PicBox_DecoraciónBtn1.TabIndex = 14;
+            this.PicBox_DecoraciónBtn1.TabStop = false;
             // 
-            // pictureBox3
+            // PicBox_DecoraciónBtn4
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(195, 359);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(128, 103);
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.PicBox_DecoraciónBtn4.Location = new System.Drawing.Point(195, 359);
+            this.PicBox_DecoraciónBtn4.Name = "PicBox_DecoraciónBtn4";
+            this.PicBox_DecoraciónBtn4.Size = new System.Drawing.Size(128, 103);
+            this.PicBox_DecoraciónBtn4.TabIndex = 15;
+            this.PicBox_DecoraciónBtn4.TabStop = false;
             // 
-            // pictureBox4
+            // PicBox_DecoraciónBtn2
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(315, 193);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(128, 103);
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.PicBox_DecoraciónBtn2.Location = new System.Drawing.Point(315, 193);
+            this.PicBox_DecoraciónBtn2.Name = "PicBox_DecoraciónBtn2";
+            this.PicBox_DecoraciónBtn2.Size = new System.Drawing.Size(128, 103);
+            this.PicBox_DecoraciónBtn2.TabIndex = 16;
+            this.PicBox_DecoraciónBtn2.TabStop = false;
             // 
-            // pictureBox5
+            // PicBox_DecoraciónBtn5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(437, 358);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 103);
-            this.pictureBox5.TabIndex = 17;
-            this.pictureBox5.TabStop = false;
+            this.PicBox_DecoraciónBtn5.Location = new System.Drawing.Point(437, 358);
+            this.PicBox_DecoraciónBtn5.Name = "PicBox_DecoraciónBtn5";
+            this.PicBox_DecoraciónBtn5.Size = new System.Drawing.Size(128, 103);
+            this.PicBox_DecoraciónBtn5.TabIndex = 17;
+            this.PicBox_DecoraciónBtn5.TabStop = false;
             // 
-            // pictureBox6
+            // PicBox_DecoraciónBtn3
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(553, 194);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(128, 103);
-            this.pictureBox6.TabIndex = 18;
-            this.pictureBox6.TabStop = false;
+            this.PicBox_DecoraciónBtn3.Location = new System.Drawing.Point(553, 194);
+            this.PicBox_DecoraciónBtn3.Name = "PicBox_DecoraciónBtn3";
+            this.PicBox_DecoraciónBtn3.Size = new System.Drawing.Size(128, 103);
+            this.PicBox_DecoraciónBtn3.TabIndex = 18;
+            this.PicBox_DecoraciónBtn3.TabStop = false;
             // 
             // FormMenúPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 536);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PicBox_DecoraciónBtn3);
+            this.Controls.Add(this.PicBox_DecoraciónBtn5);
+            this.Controls.Add(this.PicBox_DecoraciónBtn2);
+            this.Controls.Add(this.PicBox_DecoraciónBtn4);
+            this.Controls.Add(this.PicBox_DecoraciónBtn1);
+            this.Controls.Add(this.Btn_FormVerClientes);
+            this.Controls.Add(this.Btn_FormAbonarCuota);
+            this.Controls.Add(this.Btn_FormReportes);
+            this.Controls.Add(this.Btn_FormSolicitudPréstamos);
+            this.Controls.Add(this.Btn_FormPréstamosTomados);
+            this.Controls.Add(this.Lbl_Decoración8);
+            this.Controls.Add(this.Lbl_Decoración7);
+            this.Controls.Add(this.Lbl_Decoración6);
+            this.Controls.Add(this.Lbl_Decoración5);
+            this.Controls.Add(this.Lbl_Decoración4);
+            this.Controls.Add(this.Lbl_Decoración3);
+            this.Controls.Add(this.Lbl_Decoración2);
+            this.Controls.Add(this.Lbl_Decoración1);
+            this.Controls.Add(this.PicBox_Decoración);
             this.Name = "FormMenúPrincipal";
             this.Text = "FormMenúPrincipal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_Decoración)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,24 +259,24 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox PicBox_Decoración;
+        private System.Windows.Forms.Label Lbl_Decoración1;
+        private System.Windows.Forms.Label Lbl_Decoración2;
+        private System.Windows.Forms.Label Lbl_Decoración3;
+        private System.Windows.Forms.Label Lbl_Decoración4;
+        private System.Windows.Forms.Label Lbl_Decoración5;
+        private System.Windows.Forms.Label Lbl_Decoración6;
+        private System.Windows.Forms.Label Lbl_Decoración7;
+        private System.Windows.Forms.Label Lbl_Decoración8;
+        private System.Windows.Forms.Button Btn_FormPréstamosTomados;
+        private System.Windows.Forms.Button Btn_FormSolicitudPréstamos;
+        private System.Windows.Forms.Button Btn_FormReportes;
+        private System.Windows.Forms.Button Btn_FormAbonarCuota;
+        private System.Windows.Forms.Button Btn_FormVerClientes;
+        private System.Windows.Forms.PictureBox PicBox_DecoraciónBtn1;
+        private System.Windows.Forms.PictureBox PicBox_DecoraciónBtn4;
+        private System.Windows.Forms.PictureBox PicBox_DecoraciónBtn2;
+        private System.Windows.Forms.PictureBox PicBox_DecoraciónBtn5;
+        private System.Windows.Forms.PictureBox PicBox_DecoraciónBtn3;
     }
 }
