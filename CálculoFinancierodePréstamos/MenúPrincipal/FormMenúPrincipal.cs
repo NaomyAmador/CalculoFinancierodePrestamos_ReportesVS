@@ -40,5 +40,13 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
             FormBotónNúmero3.Show();
             this.Hide();
         }
+
+        private void Btn_FormPréstamosTomados_Click(object sender, EventArgs e)
+        {
+            FormPréstamosTomados FormBotónNúmero4 = new FormPréstamosTomados();
+            FormBotónNúmero4.Owner = this;
+            FormBotónNúmero4.Show();
+            this.Hide();
+        }
     }
 }

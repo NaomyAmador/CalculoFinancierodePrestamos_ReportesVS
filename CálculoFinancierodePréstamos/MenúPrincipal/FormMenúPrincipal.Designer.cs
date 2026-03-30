@@ -143,6 +143,7 @@
             this.Btn_FormPréstamosTomados.TabIndex = 9;
             this.Btn_FormPréstamosTomados.Text = "Btn_Form4";
             this.Btn_FormPréstamosTomados.UseVisualStyleBackColor = true;
+            this.Btn_FormPréstamosTomados.Click += new System.EventHandler(this.Btn_FormPréstamosTomados_Click);
             // 
             // Btn_FormSolicitudPréstamos
             // 
