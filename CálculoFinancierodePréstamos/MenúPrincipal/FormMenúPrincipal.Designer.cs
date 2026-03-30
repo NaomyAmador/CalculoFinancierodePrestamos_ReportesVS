@@ -163,6 +163,7 @@
             this.Btn_FormReportes.TabIndex = 11;
             this.Btn_FormReportes.Text = "Btn_Form5";
             this.Btn_FormReportes.UseVisualStyleBackColor = true;
+            this.Btn_FormReportes.Click += new System.EventHandler(this.Btn_FormReportes_Click);
             // 
             // Btn_FormAbonarCuota
             // 
