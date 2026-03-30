@@ -11,7 +11,7 @@ namespace Entidades
         public int IdMora { get; set; }
         public int IdCliente { get; set; }
         public int IdCuota { get; set; }
-        public int MontoMora { get; set; }
+        public decimal MontoMora { get; set; }
         public DateTime Fecha { get; set; }
     }
 }

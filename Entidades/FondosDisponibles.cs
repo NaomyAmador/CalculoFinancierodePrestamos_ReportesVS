@@ -9,6 +9,6 @@ namespace Entidades
     public class FondosDisponibles
     {
         public int IdFondo { get; set; }
-        public int CantidadDisponible { get; set; }
+        public decimal CantidadDisponible { get; set; }
     }
 }
