@@ -52,6 +52,42 @@
     <Compile Include="Clientes\FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenúPrincipal\FormAbonarCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormAbonarCuota.Designer.cs">
+      <DependentUpon>FormAbonarCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormMenúPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormMenúPrincipal.Designer.cs">
+      <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormPréstamosTomados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormPréstamosTomados.Designer.cs">
+      <DependentUpon>FormPréstamosTomados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormSolicitudPréstamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormSolicitudPréstamos.Designer.cs">
+      <DependentUpon>FormSolicitudPréstamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormVerCientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormVerCientes.Designer.cs">
+      <DependentUpon>FormVerCientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clientes\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormMenúPrincipal.resx">
+      <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
