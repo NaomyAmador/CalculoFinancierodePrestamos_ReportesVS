@@ -38,7 +38,6 @@
             this.txt_tem = new System.Windows.Forms.TextBox();
             this.cmb_tiempoA = new System.Windows.Forms.ComboBox();
             this.dgv_Cuotas = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_calcular = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
@@ -73,6 +72,7 @@
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.dtp_FechaPrimerPago = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cuotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -175,14 +175,6 @@
             this.dgv_Cuotas.Size = new System.Drawing.Size(1121, 390);
             this.dgv_Cuotas.TabIndex = 11;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(31, 251);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 258);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -229,8 +221,9 @@
             this.btn_atras.Name = "btn_atras";
             this.btn_atras.Size = new System.Drawing.Size(164, 33);
             this.btn_atras.TabIndex = 16;
-            this.btn_atras.Text = "Atrás";
+            this.btn_atras.Text = "Cerrar";
             this.btn_atras.UseVisualStyleBackColor = false;
+            this.btn_atras.Click += new System.EventHandler(this.btn_atras_Click);
             // 
             // label8
             // 
@@ -516,6 +509,7 @@
             this.btn_imprimir.TabIndex = 44;
             this.btn_imprimir.Text = "Imprimir Reporte";
             this.btn_imprimir.UseVisualStyleBackColor = false;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // label15
             // 
@@ -537,6 +531,14 @@
             this.dtp_FechaPrimerPago.Size = new System.Drawing.Size(250, 28);
             this.dtp_FechaPrimerPago.TabIndex = 46;
             this.dtp_FechaPrimerPago.Value = new System.DateTime(2026, 3, 28, 22, 26, 7, 0);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(31, 251);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 258);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Prestamo
             // 

@@ -111,9 +111,10 @@ namespace LógicaNegocio
             return cuotas;
 
         }
-        public bool GuardarPrestamoCompleto(Préstamos p, List<Cuotas> lista)
+        public int GuardarPrestamoCompleto(Préstamos p, List<Cuotas> lista)
         {
-            return Prestamo.AddPrestamo(p, lista);
+            PrestamosDatos datos = new PrestamosDatos();
+            return datos.AddPrestamo(p, lista);
         }
         public List<Entidades.Clientes> ObtenerTodosLosClientes()
         {

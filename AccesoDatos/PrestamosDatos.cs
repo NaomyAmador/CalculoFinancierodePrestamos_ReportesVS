@@ -60,7 +60,7 @@ namespace AccesoDatos
             }
             return totalMoras;
         }
-        public bool AddPrestamo(Préstamos p, List<Cuotas> cuotas)
+        public int AddPrestamo(Préstamos p, List<Cuotas> cuotas)
         {
             using (SqlConnection Conexión = con.ObtenerConexión())
             {
@@ -106,14 +106,14 @@ namespace AccesoDatos
                         Actualizar.Parameters.AddWithValue("@Monto", p.MontoCapital);
                         Actualizar.ExecuteNonQuery();
                         transaccion.Commit();
-                        return true;
+                        return IdPrestamoHecho;
                    
                 }
                 catch (Exception)
                 {
                     transaccion.Rollback();
                  
-                    return false;
+                    return 0;
                 }
                
 

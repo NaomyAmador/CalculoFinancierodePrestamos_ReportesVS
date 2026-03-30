@@ -1,16 +1,10 @@
-﻿using Entidades;
+﻿using CálculoFinancierodePréstamos.Reportes;
+using Entidades;
 using LógicaNegocio;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Globalization;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CálculoFinancierodePréstamos.Prestamos
@@ -19,6 +13,9 @@ namespace CálculoFinancierodePréstamos.Prestamos
     {
         LogicaNegocios_Prestamos guardar = new LogicaNegocios_Prestamos();
         private User_Login _usuarioLogueado;
+
+        private int idUltimoPrestamo = 0;
+        private List<Cuotas> listaActualParaReporte = new List<Cuotas>();
 
         public Prestamo(User_Login usuarioQueEntro)
         {
@@ -31,29 +28,46 @@ namespace CálculoFinancierodePréstamos.Prestamos
             btn_guardar.Enabled = true;
             if (dgv_Cuotas.DataSource == null) return;
 
-                int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
-                int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
-                List<Cuotas> Lista = (List<Cuotas>)dgv_Cuotas.DataSource;
+            int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
+            int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
+            listaActualParaReporte = (List<Cuotas>)dgv_Cuotas.DataSource;
+            //List<Cuotas> Lista = (List<Cuotas>)dgv_Cuotas.DataSource;
 
-                Préstamos Prestamo = new Préstamos
-                {
-                    IdCliente = int.Parse(txt_id.Text),
-                    IdUsuario = _usuarioLogueado.IdUsuario,
-                    MontoCapital = decimal.Parse(txt_MontoDeseado.Text),
-                    PlazoMeses = MesesFinales,
-                    TasaInteresAplicada = decimal.Parse(txt_tea.Text),
-                    MontoTotal = Lista.Sum(x => x.MontoCuota),
-                    Garantia = txt_garantia.Text,
-                    Fecha = DateTime.Now
-                };
+            Préstamos Prestamo = new Préstamos
+            {
+                IdCliente = int.Parse(txt_id.Text),
+                IdUsuario = _usuarioLogueado.IdUsuario,
+                MontoCapital = decimal.Parse(txt_MontoDeseado.Text),
+                PlazoMeses = MesesFinales,
+                TasaInteresAplicada = decimal.Parse(txt_tea.Text),
+                MontoTotal = listaActualParaReporte.Sum(x => x.MontoCuota),
+                Garantia = txt_garantia.Text,
+                Fecha = DateTime.Now
+            };
+            int nuevoId = guardar.GuardarPrestamoCompleto(Prestamo, listaActualParaReporte);
+
+            if (nuevoId > 0)
+            {
+                idUltimoPrestamo = nuevoId; 
+                MessageBox.Show("Préstamo registrado con éxito. ID: " + idUltimoPrestamo, "Éxito");
+
                
-                if (guardar.GuardarPrestamoCompleto(Prestamo, Lista))
-                {
-                    MessageBox.Show("Préstamo registrado exitosamente y fondos actualizados.", "Éxito");
-                    LimpiarPantalla();
-                    ActualizarFondoBanco();
-                }
+                ActualizarFondoBanco();
+                btn_imprimir.Enabled = true; 
+            }
+            else
+            {
+                MessageBox.Show("Hubo un error al guardar.");
+            }
         }
+
+        ////if (guardar.GuardarPrestamoCompleto(Prestamo, Lista))
+        //{
+        //    MessageBox.Show("Préstamo registrado exitosamente y fondos actualizados.", "Éxito");
+        //    LimpiarPantalla();
+        //    ActualizarFondoBanco();
+        //}
+        //}
 
         private void ActualizarFondoBanco()
         {
@@ -107,11 +121,11 @@ namespace CálculoFinancierodePréstamos.Prestamos
                     MessageBox.Show("Por favor, llene el monto y el sueldo.");
                     return;
                 }
-                
+
                 string montoLimpio = txt_MontoDeseado.Text.Replace(",", "").Replace("$", "").Trim();
                 string sueldoLimpio = txt_sueldo.Text.Replace(",", "").Replace("$", "").Trim();
 
-                
+
                 decimal MontoDeseado = decimal.Parse(montoLimpio, System.Globalization.CultureInfo.InvariantCulture);
                 decimal sueldo = decimal.Parse(sueldoLimpio, System.Globalization.CultureInfo.InvariantCulture);
 
@@ -123,7 +137,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
                 int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
                 int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
-                
+
                 DateTime FechaInicio = dtp_FechaPrimerPago.Value;
 
 
@@ -139,7 +153,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
                     txt_tem.Text = (tem * 100).ToString("N2") + "%";
 
 
-                    var ListaCuotas = guardar.GenerarCuotas(MontoDeseado, (double)tea, MesesFinales,FechaInicio);
+                    var ListaCuotas = guardar.GenerarCuotas(MontoDeseado, (double)tea, MesesFinales, FechaInicio);
                     dgv_Cuotas.DataSource = null;
                     dgv_Cuotas.DataSource = ListaCuotas;
 
@@ -182,16 +196,20 @@ namespace CálculoFinancierodePréstamos.Prestamos
             dgv_Cuotas.DataSource = null;
             btn_guardar.Enabled = false;
         }
+        private void CerrarPantalla()
+        {
+
+        }
         private void ActualizarTEAAutomaticamente()
         {
             if (cmb_tiempoA.SelectedItem != null && cmb_TipoDeTiempo.SelectedItem != null)
             {
                 int valorTiempo = int.Parse(cmb_tiempoA.SelectedItem.ToString());
 
-               
+
                 int mesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? valorTiempo * 12 : valorTiempo;
 
-                
+
                 decimal tea = guardar.ObtenerTasaTEA(mesesFinales);
 
                 txt_tea.Text = tea.ToString("N2") + "%";
@@ -206,22 +224,22 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
             ActualizarFondoBanco();
             cmb_nombre.DataSource = guardar.ObtenerTodosLosClientes();
-            cmb_nombre.DisplayMember = "NombreCompleto";    
-            cmb_nombre.ValueMember = "IdCliente";   
+            cmb_nombre.DisplayMember = "NombreCompleto";
+            cmb_nombre.ValueMember = "IdCliente";
 
             cmb_nombre.SelectedIndex = -1;
             cmb_TipoDeTiempo.Items.Clear();
             cmb_TipoDeTiempo.Items.Add("Meses");
             cmb_TipoDeTiempo.Items.Add("Años");
-            cmb_TipoDeTiempo.SelectedIndex = 0; 
+            cmb_TipoDeTiempo.SelectedIndex = 0;
 
-         
+
             cmb_tiempoA.Items.Clear();
-            for (int i = 6; i <= 36; i += 6) 
+            for (int i = 6; i <= 36; i += 6)
             {
                 cmb_tiempoA.Items.Add(i);
             }
-            cmb_tiempoA.SelectedIndex = 1; 
+            cmb_tiempoA.SelectedIndex = 1;
         }
 
         private void cmb_TipoDeTiempo_SelectedIndexChanged(object sender, EventArgs e)
@@ -241,7 +259,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
             cmb_tiempoA.SelectedIndex = 0;
 
-           
+
             cmb_tiempoA.SelectedIndexChanged += cmb_tiempoA_SelectedIndexChanged;
             ActualizarTEAAutomaticamente();
         }
@@ -250,6 +268,37 @@ namespace CálculoFinancierodePréstamos.Prestamos
         {
             ActualizarTEAAutomaticamente();
         }
+
+        private void btn_atras_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmacion = MessageBox.Show("¿Está seguro que desea salir? Los datos no guardados se perderán.",
+        "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                this.Close(); 
+            }
+
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+            if (idUltimoPrestamo == 0)
+            {
+                MessageBox.Show("Primero debe guardar el préstamo.");
+                return;
+            }
+            MessageBox.Show("Enviando el ID: " + idUltimoPrestamo);
+
+            FrmReporteTablaAmortizacion1 visor = new FrmReporteTablaAmortizacion1();
+
+     
+            visor.IdPrestamoRecibido = this.idUltimoPrestamo;
+            visor.ListaAmortizacionSubida = this.listaActualParaReporte;
+
+           
+            visor.ShowDialog();
+        }
     }
-    
+
 }

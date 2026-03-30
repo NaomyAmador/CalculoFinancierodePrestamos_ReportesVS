@@ -15,6 +15,10 @@ namespace CálculoFinancierodePréstamos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+
+           
             Application.Run(new Prestamos.Prestamo(new User_Login()));
         }
     }
