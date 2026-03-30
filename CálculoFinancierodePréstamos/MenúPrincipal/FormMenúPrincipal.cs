@@ -35,7 +35,10 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormVerClientes_Click(object sender, EventArgs e)
         {
-            
+            FormVerCientes FormBotónNúmero3 = new FormVerCientes();
+            FormBotónNúmero3.Owner = this;
+            FormBotónNúmero3.Show();
+            this.Hide();
         }
     }
 }
