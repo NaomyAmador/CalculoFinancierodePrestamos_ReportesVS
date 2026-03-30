@@ -152,6 +152,7 @@
             this.Btn_FormSolicitudPréstamos.TabIndex = 10;
             this.Btn_FormSolicitudPréstamos.Text = "Btn_Form1";
             this.Btn_FormSolicitudPréstamos.UseVisualStyleBackColor = true;
+            this.Btn_FormSolicitudPréstamos.Click += new System.EventHandler(this.Btn_FormSolicitudPréstamos_Click);
             // 
             // Btn_FormReportes
             // 
@@ -170,6 +171,7 @@
             this.Btn_FormAbonarCuota.TabIndex = 12;
             this.Btn_FormAbonarCuota.Text = "Btn_Form2";
             this.Btn_FormAbonarCuota.UseVisualStyleBackColor = true;
+            this.Btn_FormAbonarCuota.Click += new System.EventHandler(this.Btn_FormAbonarCuota_Click);
             // 
             // Btn_FormVerClientes
             // 
@@ -179,6 +181,7 @@
             this.Btn_FormVerClientes.TabIndex = 13;
             this.Btn_FormVerClientes.Text = "Btn_Form3";
             this.Btn_FormVerClientes.UseVisualStyleBackColor = true;
+            this.Btn_FormVerClientes.Click += new System.EventHandler(this.Btn_FormVerClientes_Click);
             // 
             // PicBox_DecoraciónBtn1
             // 

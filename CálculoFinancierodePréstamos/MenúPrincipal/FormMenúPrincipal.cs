@@ -16,5 +16,23 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
         {
             InitializeComponent();
         }
+
+        private void Btn_FormSolicitudPréstamos_Click(object sender, EventArgs e)
+        {
+            FormSolicitudPréstamos FormBotónNúmero1 = new FormSolicitudPréstamos();
+            FormBotónNúmero1.Owner = this;
+            FormBotónNúmero1.Show();
+            this.Hide();
+        }
+
+        private void Btn_FormAbonarCuota_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Btn_FormVerClientes_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
