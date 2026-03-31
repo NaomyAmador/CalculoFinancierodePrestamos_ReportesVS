@@ -20,7 +20,7 @@ namespace AccesoDatos
             using (SqlConnection conexion = conexionBDD.ObtenerConexión())
             {
                 string consulta = @"SELECT IdPrestamo, IdCliente, IdUsuario, MontoCapital, PlazoMeses,TasaInteresAplicada, MontoTotal,  
-                                    Garantia, Fecha FROM Prestamos WHERE IdCliente = @IdCliente ORDER BY Fecha";
+                                    Garantia, Fecha, Estado FROM Prestamos WHERE IdCliente = @IdCliente ORDER BY Fecha";
 
 
                 SqlCommand comando = new SqlCommand(consulta, conexion);
@@ -36,12 +36,13 @@ namespace AccesoDatos
                     prestamo.IdPrestamo = (int)reader["IdPrestamo"];
                     prestamo.IdCliente = (int)reader["IdCliente"];
                     prestamo.IdUsuario = (int)reader["IdUsuario"];
-                    prestamo.MontoCapital = (int)reader["MontoCapital"];
+                    prestamo.MontoCapital = (decimal)reader["MontoCapital"];
                     prestamo.PlazoMeses = (int)reader["PlazoMeses"];
                     prestamo.TasaInteresAplicada = (decimal)reader["TasaInteresAplicada"];
-                    prestamo.MontoTotal = (int)reader["MontoTotal"];
+                    prestamo.MontoTotal = (decimal)reader["MontoTotal"];
                     prestamo.Garantia = reader["Garantia"].ToString();
                     prestamo.Fecha = (System.DateTime)reader["Fecha"];
+                    prestamo.Estado = (string)reader["Estado"];
 
                     listaPrestamos.Add(prestamo);
                 }

@@ -32,7 +32,7 @@ namespace CálculoFinancierodePréstamos.Clientes
                     Correo = txtCorreo.Text,
                     Direccion = txtDireccion.Text,
                     Telefono = txtTelefono.Text,
-                    SueldoMensual = int.Parse(txtSueldo.Text)
+                    SueldoMensual = Convert.ToDecimal(txtSueldo.Text)
                 };
 
                 LógicaNegocio_ActualizarCliente logica = new LógicaNegocio_ActualizarCliente();

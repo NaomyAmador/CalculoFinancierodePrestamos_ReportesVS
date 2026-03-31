@@ -69,10 +69,11 @@ namespace CálculoFinancierodePréstamos.Clientes
 
             if (DateTime.Now > cuota.FechaVencimiento)
             {
-                mora = (int)(cuota.MontoCuota * 0.10);
+                mora = (int)(cuota.MontoCuota * 0.10m);
             }
 
-            int total = cuota.MontoCuota + mora;
+
+            decimal  total = cuota.MontoCuota + mora;
 
             txtMontoAnterior.Text = cuota.SaldoRemanente.ToString();
             txtInteres.Text = cuota.InteresCuota.ToString();

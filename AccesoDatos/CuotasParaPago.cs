@@ -31,12 +31,12 @@ namespace AccesoDatos
                         IdCuota = Convert.ToInt32(reader["IdCuota"]),
                         IdPrestamo = Convert.ToInt32(reader["IdPrestamo"]),
                         NumeroDeCuota = Convert.ToInt32(reader["NumeroDeCuota"]),
-                        MontoCuota = Convert.ToInt32(reader["MontoCuota"]),
+                        MontoCuota = Convert.ToDecimal(reader["MontoCuota"]),
                         InteresCuota = Convert.ToDecimal(reader["InteresCuota"]),
                         AbonoCapital = reader["AbonoCapital"] != DBNull.Value
-                        ? Convert.ToInt32(reader["AbonoCapital"]): 0,
+                        ? Convert.ToDecimal(reader["AbonoCapital"]): 0,
                         SaldoRemanente = reader["SaldoRemanente"] != DBNull.Value
-                        ? Convert.ToInt32(reader["SaldoRemanente"]): 0,
+                        ? Convert.ToDecimal(reader["SaldoRemanente"]): 0,
                         FechaVencimiento = Convert.ToDateTime(reader["FechaVencimiento"]),
                         Estado = reader["Estado"].ToString()
                     };

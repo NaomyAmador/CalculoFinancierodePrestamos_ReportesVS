@@ -166,7 +166,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>5.00406cm</Top>
+        <Top>4.22354cm</Top>
         <Left>0.31433cm</Left>
         <Height>0.6cm</Height>
         <Width>6.13802cm</Width>
@@ -208,8 +208,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>7.01076cm</Top>
-        <Left>0.31433cm</Left>
+        <Top>6.42868cm</Top>
+        <Left>0.35401cm</Left>
         <Height>0.6cm</Height>
         <Width>5.17229cm</Width>
         <ZIndex>5</ZIndex>
@@ -250,8 +250,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>6.01857cm</Top>
-        <Left>0.31433cm</Left>
+        <Top>5.33066cm</Top>
+        <Left>0.35401cm</Left>
         <Height>0.6cm</Height>
         <Width>3.57156cm</Width>
         <ZIndex>6</ZIndex>
@@ -446,7 +446,7 @@
   <Width>5.10417in</Width>
   <Page>
     <PageHeader>
-      <Height>1.45273cm</Height>
+      <Height>1.9378cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -459,7 +459,7 @@
                 <TextRun>
                   <Value>Detalle Del Cliente</Value>
                   <Style>
-                    <FontFamily>Garamond</FontFamily>
+                    <FontFamily>century Gothic</FontFamily>
                     <FontSize>24pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <Color>="White"</Color>
@@ -474,8 +474,8 @@
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.32314cm</Top>
           <Left>0.31433cm</Left>
-          <Height>0.9532cm</Height>
-          <Width>7.23953cm</Width>
+          <Height>1.12518cm</Height>
+          <Width>11.0363cm</Width>
           <Style>
             <Border>
               <Style>None</Style>

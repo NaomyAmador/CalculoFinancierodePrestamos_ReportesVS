@@ -28,16 +28,16 @@ namespace LógicaNegocio
 
                     var prestamo = prestamoAD.ObtenerPrestamo(idPrestamo);
 
-                    int montoBase = cuota.MontoCuota;
-                    int mora = 0;
+                    decimal montoBase = cuota.MontoCuota;
+                    decimal mora = 0;
 
-                   
+
                     if (DateTime.Now > cuota.FechaVencimiento)
                     {
-                        mora = (int)(montoBase * 0.10);
+                        mora = (decimal)(montoBase * 0.10m);
                     }
-
-                    int totalPagar = montoBase + mora;
+                    
+                    decimal  totalPagar = montoBase + mora;
 
                                         
                     Pagos pago = new Pagos()

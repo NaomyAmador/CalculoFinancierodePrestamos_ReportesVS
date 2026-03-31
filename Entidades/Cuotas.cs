@@ -11,10 +11,10 @@ namespace Entidades
         public int IdCuota { get; set; }
         public int IdPrestamo { get; set; }
         public int NumeroDeCuota { get; set; }
-        public int MontoCuota { get; set; }
+        public decimal MontoCuota { get; set; }
         public decimal InteresCuota { get; set; }
-        public int AbonoCapital { get; set; }
-        public int SaldoRemanente { get; set; }
+        public decimal AbonoCapital { get; set; }
+        public decimal SaldoRemanente { get; set; }
         public DateTime FechaVencimiento { get; set; }
         public string Estado { get; set; }
     }

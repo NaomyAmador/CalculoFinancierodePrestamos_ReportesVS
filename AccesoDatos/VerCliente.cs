@@ -28,7 +28,7 @@ namespace AccesoDatos
                         Correo = reader["Correo"].ToString(),
                         Direccion = reader["Direccion"].ToString(),
                         Telefono = reader["Telefono"].ToString(),
-                        SueldoMensual = (int)reader["SueldoMensual"]
+                        SueldoMensual = (decimal)reader["SueldoMensual"]
                     };
                 }
 
