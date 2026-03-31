@@ -73,6 +73,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.dtp_FechaPrimerPago = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cuotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -204,7 +205,7 @@
             this.btn_guardar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_guardar.Location = new System.Drawing.Point(619, 960);
+            this.btn_guardar.Location = new System.Drawing.Point(443, 966);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(318, 33);
             this.btn_guardar.TabIndex = 15;
@@ -217,7 +218,7 @@
             this.btn_atras.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_atras.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_atras.ForeColor = System.Drawing.Color.White;
-            this.btn_atras.Location = new System.Drawing.Point(1086, 960);
+            this.btn_atras.Location = new System.Drawing.Point(1087, 966);
             this.btn_atras.Name = "btn_atras";
             this.btn_atras.Size = new System.Drawing.Size(164, 33);
             this.btn_atras.TabIndex = 16;
@@ -503,7 +504,7 @@
             this.btn_imprimir.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_imprimir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_imprimir.ForeColor = System.Drawing.Color.White;
-            this.btn_imprimir.Location = new System.Drawing.Point(360, 960);
+            this.btn_imprimir.Location = new System.Drawing.Point(214, 966);
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(209, 33);
             this.btn_imprimir.TabIndex = 44;
@@ -540,11 +541,25 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpiar.ForeColor = System.Drawing.Color.White;
+            this.btn_Limpiar.Location = new System.Drawing.Point(848, 966);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(164, 33);
+            this.btn_Limpiar.TabIndex = 47;
+            this.btn_Limpiar.Text = "Limpiar";
+            this.btn_Limpiar.UseVisualStyleBackColor = false;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
+            // 
             // Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 1011);
+            this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.dtp_FechaPrimerPago);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btn_imprimir);
@@ -647,5 +662,6 @@
         private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dtp_FechaPrimerPago;
+        private System.Windows.Forms.Button btn_Limpiar;
     }
 }

@@ -26,34 +26,66 @@ namespace CálculoFinancierodePréstamos.Prestamos
         private void btn_guardar_Click(object sender, EventArgs e)
         {
             btn_guardar.Enabled = true;
+
             if (dgv_Cuotas.DataSource == null) return;
 
-            int TiempoEntrada = int.Parse(cmb_tiempoA.Text);
-            int MesesFinales = (cmb_TipoDeTiempo.Text == "Años") ? TiempoEntrada * 12 : TiempoEntrada;
             listaActualParaReporte = (List<Cuotas>)dgv_Cuotas.DataSource;
-            //List<Cuotas> Lista = (List<Cuotas>)dgv_Cuotas.DataSource;
+
+            // VALIDACIONES SEGURAS
+            if (!int.TryParse(txt_id.Text, out int idCliente))
+            {
+                MessageBox.Show("ID inválido");
+                return;
+            }
+
+            if (!decimal.TryParse(txt_MontoDeseado.Text, out decimal monto))
+            {
+                MessageBox.Show("Monto inválido");
+                return;
+            }
+
+            // 🔥 LIMPIEZA DEL TEA (CLAVE)
+            string teaLimpio = txt_tea.Text.Replace("%", "").Trim();
+
+            if (!decimal.TryParse(teaLimpio, out decimal tasa))
+            {
+                MessageBox.Show("Tasa inválida");
+                return;
+            }
+
+            if (!int.TryParse(cmb_tiempoA.Text, out int TiempoEntrada))
+            {
+                MessageBox.Show("Tiempo inválido");
+                return;
+            }
+
+            int MesesFinales = (cmb_TipoDeTiempo.Text == "Años")
+                                ? TiempoEntrada * 12
+                                : TiempoEntrada;
 
             Préstamos Prestamo = new Préstamos
             {
-                IdCliente = int.Parse(txt_id.Text),
+                IdCliente = idCliente,
                 IdUsuario = _usuarioLogueado.IdUsuario,
-                MontoCapital = decimal.Parse(txt_MontoDeseado.Text),
+                MontoCapital = monto,
                 PlazoMeses = MesesFinales,
-                TasaInteresAplicada = decimal.Parse(txt_tea.Text),
+                TasaInteresAplicada = tasa,
                 MontoTotal = listaActualParaReporte.Sum(x => x.MontoCuota),
                 Garantia = txt_garantia.Text,
-                Fecha = DateTime.Now
+                Fecha = DateTime.Now,
+                Estado = "Activo"
             };
+
             int nuevoId = guardar.GuardarPrestamoCompleto(Prestamo, listaActualParaReporte);
 
             if (nuevoId > 0)
             {
-                idUltimoPrestamo = nuevoId; 
+                idUltimoPrestamo = nuevoId;
+
                 MessageBox.Show("Préstamo registrado con éxito. ID: " + idUltimoPrestamo, "Éxito");
 
-               
                 ActualizarFondoBanco();
-                btn_imprimir.Enabled = true; 
+                btn_imprimir.Enabled = true;
             }
             else
             {
@@ -147,7 +179,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
                 {
                     decimal tea = guardar.ObtenerTasaTEA(MesesFinales);
                     txt_tea.Enabled = false;
-                    txt_tea.Text = tea.ToString();
+                    txt_tea.Text = tea.ToString() + "%";
                     txt_TiempoM.Text = MesesFinales.ToString();
                     double tem = guardar.CalcularTEM((double)tea);
                     txt_tem.Text = (tem * 100).ToString("N2") + "%";
@@ -298,6 +330,32 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
            
             visor.ShowDialog();
+        }
+
+        private void btn_Limpiar_Click(object sender, EventArgs e)
+        {
+            txt_id.Clear();
+            txt_MontoDeseado.Clear();
+            txt_tea.Clear();
+            txt_garantia.Clear();
+
+            
+            cmb_tiempoA.SelectedIndex = -1;
+            cmb_TipoDeTiempo.SelectedIndex = 0; 
+
+            
+            dgv_Cuotas.DataSource = null;
+            listaActualParaReporte = null;
+
+           
+            idUltimoPrestamo = 0;
+
+          
+            btn_imprimir.Enabled = false;
+            btn_guardar.Enabled = true;
+
+          
+            txt_id.Focus();
         }
     }
 

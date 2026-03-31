@@ -15,6 +15,6 @@ namespace Entidades
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public decimal SueldoMensual { get; set; } //cambiar a decimal
-        public int IdMora { get; set; }
+        public bool EsMoroso { get; set; }
     }
 }

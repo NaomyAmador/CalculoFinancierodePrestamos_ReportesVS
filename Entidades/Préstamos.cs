@@ -17,5 +17,7 @@ namespace Entidades
         public decimal MontoTotal { get; set; } // cambio a decimal
         public string Garantia { get; set; }
         public DateTime Fecha { get; set; }
+        public string Estado { get; set; }
+        
     }
 }

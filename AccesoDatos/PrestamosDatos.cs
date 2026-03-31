@@ -70,7 +70,7 @@ namespace AccesoDatos
                 SqlTransaction transaccion = Conexión.BeginTransaction();
                 try
                 {
-                    string Consulta1 = @"INSERT INTO Prestamos (IdCliente, IdUsuario, MontoCapital, plazoMeses, TasaInteresAplicada, MontoTotal, Garantia, Fecha) VALUES (@IdCliente, @IdUsuario, @MontoCapital, @plazoMeses, @TasaInteresAplicada, @MontoTotal, @Garantia, @Fecha); SELECT SCOPE_IDENTITY();";
+                    string Consulta1 = @"INSERT INTO Prestamos (IdCliente, IdUsuario, MontoCapital, plazoMeses, TasaInteresAplicada, MontoTotal, Garantia, Fecha, Estado) VALUES (@IdCliente, @IdUsuario, @MontoCapital, @plazoMeses, @TasaInteresAplicada, @MontoTotal, @Garantia, @Fecha, @Estado); SELECT SCOPE_IDENTITY();";
                     SqlCommand AgregarPrestamo = new SqlCommand(Consulta1, Conexión, transaccion);
 
                     AgregarPrestamo.Parameters.AddWithValue("@IdCliente", p.IdCliente);
@@ -81,6 +81,7 @@ namespace AccesoDatos
                     AgregarPrestamo.Parameters.AddWithValue("@MontoTotal", p.MontoTotal);
                     AgregarPrestamo.Parameters.AddWithValue("@Garantia", p.Garantia);
                     AgregarPrestamo.Parameters.AddWithValue("@Fecha", DateTime.Now);
+                    AgregarPrestamo.Parameters.AddWithValue("@Estado", "Activo");
 
                     int IdPrestamoHecho = Convert.ToInt32(AgregarPrestamo.ExecuteScalar());
 
