@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCliente.cs" />
     <Compile Include="AddUsuario.cs" />
     <Compile Include="ConexiónBDD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

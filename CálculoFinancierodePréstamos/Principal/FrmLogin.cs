@@ -124,5 +124,10 @@ namespace CálculoFinancierodePréstamos.Principal
         {
             Application.Exit();
         }
+
+        private void TxtBox_Usuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

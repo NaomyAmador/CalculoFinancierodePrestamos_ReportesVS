@@ -9,9 +9,9 @@ namespace AccesoDatos
 {
     public class ConexiónBDD
     {
-        private string CadenaConexión = "server=LAPTOP-9G07MQQC\\SQLEXPRESS; database=CalculoFinancierodeReportes;; integrated security=true;";
+        private string CadenaConexión = "server=DESKTOP-GBDI4S5\\SQLEXPRESS; database=CalculoFinancierodeReportes; integrated security=true;";
 
-        public SqlConnection ObtenerConexión()
+        public SqlConnection ObtenerConexión()   
         {
             SqlConnection Conexión = new SqlConnection(CadenaConexión);
             Conexión.Open();
