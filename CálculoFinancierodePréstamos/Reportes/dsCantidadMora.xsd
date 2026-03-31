@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCantidadMora" targetNamespace="http://tempuri.org/dsCantidadMora.xsd" xmlns:mstns="http://tempuri.org/dsCantidadMora.xsd" xmlns="http://tempuri.org/dsCantidadMora.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCantidadMora" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsCantidadMora" msprop:Generator_DataSetName="dsCantidadMora">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMorosos" msprop:Generator_RowEvHandlerName="dtMorososRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMorososRowDeleted" msprop:Generator_RowDeletingName="dtMorososRowDeleting" msprop:Generator_RowEvArgName="dtMorososRowChangeEvent" msprop:Generator_TablePropName="dtMorosos" msprop:Generator_RowChangedName="dtMorososRowChanged" msprop:Generator_RowChangingName="dtMorososRowChanging" msprop:Generator_TableClassName="dtMorososDataTable" msprop:Generator_RowClassName="dtMorososRow" msprop:Generator_TableVarName="tabledtMorosos" msprop:Generator_UserTableName="dtMorosos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_UserColumnName="Cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadMora" msprop:Generator_ColumnPropNameInRow="CantidadMora" msprop:Generator_ColumnPropNameInTable="CantidadMoraColumn" msprop:Generator_ColumnVarNameInTable="columnCantidadMora" msprop:Generator_UserColumnName="CantidadMora" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

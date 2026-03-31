@@ -1,4 +1,5 @@
 ﻿using CálculoFinancierodePréstamos.Principal;
+using CálculoFinancierodePréstamos.Reportes;
 using Entidades;
 using System;
 using System.Windows.Forms;
@@ -18,8 +19,8 @@ namespace CálculoFinancierodePréstamos
 
             SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
-           
-            Application.Run(new Prestamos.Prestamo(new User_Login()));
+            Application.Run(new FrmReportes());
+            //Application.Run(new Prestamos.Prestamo(new User_Login()));
         }
     }
 }

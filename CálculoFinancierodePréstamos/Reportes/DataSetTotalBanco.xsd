@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetTotalBanco" targetNamespace="http://tempuri.org/DataSetTotalBanco.xsd" xmlns:mstns="http://tempuri.org/DataSetTotalBanco.xsd" xmlns="http://tempuri.org/DataSetTotalBanco.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetTotalBanco" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetTotalBanco" msprop:Generator_DataSetName="DataSetTotalBanco">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetGeneral" msprop:Generator_RowEvHandlerName="DataSetGeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="DataSetGeneralRowDeleted" msprop:Generator_RowDeletingName="DataSetGeneralRowDeleting" msprop:Generator_RowEvArgName="DataSetGeneralRowChangeEvent" msprop:Generator_TablePropName="DataSetGeneral" msprop:Generator_RowChangedName="DataSetGeneralRowChanged" msprop:Generator_RowChangingName="DataSetGeneralRowChanging" msprop:Generator_TableClassName="DataSetGeneralDataTable" msprop:Generator_RowClassName="DataSetGeneralRow" msprop:Generator_TableVarName="tableDataSetGeneral" msprop:Generator_UserTableName="DataSetGeneral">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalPrestado" msprop:Generator_ColumnPropNameInRow="TotalPrestado" msprop:Generator_ColumnPropNameInTable="TotalPrestadoColumn" msprop:Generator_ColumnVarNameInTable="columnTotalPrestado" msprop:Generator_UserColumnName="TotalPrestado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalGanancia" msprop:Generator_ColumnPropNameInRow="TotalGanancia" msprop:Generator_ColumnPropNameInTable="TotalGananciaColumn" msprop:Generator_ColumnVarNameInTable="columnTotalGanancia" msprop:Generator_UserColumnName="TotalGanancia" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

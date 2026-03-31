@@ -91,6 +91,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DataSetTotalBanco.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTotalBanco.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dsCantidadMora.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCantidadMora.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\dsReporte.cs">
       <DependentUpon>dsReporte.xsd</DependentUpon>
     </Compile>
@@ -98,6 +108,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsReporte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCantidadMoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCantidadMoras.Designer.cs">
+      <DependentUpon>FrmCantidadMoras.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\FrmReportes.cs">
       <SubType>Form</SubType>
@@ -110,6 +126,12 @@
     </Compile>
     <Compile Include="Reportes\FrmReporteTablaAmortizacion1.Designer.cs">
       <DependentUpon>FrmReporteTablaAmortizacion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmTotalDelBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmTotalDelBanco.Designer.cs">
+      <DependentUpon>FrmTotalDelBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Clientes\FrmClientes.resx">
@@ -131,13 +153,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\FrmCantidadMoras.resx">
+      <DependentUpon>FrmCantidadMoras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\FrmReporteTablaAmortizacion1.resx">
       <DependentUpon>FrmReporteTablaAmortizacion1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmTotalDelBanco.resx">
+      <DependentUpon>FrmTotalDelBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptCantidadMora.rdlc" />
     <EmbeddedResource Include="Reportes\rptTablaAmortizacion1.rdlc" />
+    <EmbeddedResource Include="Reportes\rptTotalBanco.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -163,6 +193,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\DataSetTotalBanco.xsc">
+      <DependentUpon>DataSetTotalBanco.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSetTotalBanco.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTotalBanco.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSetTotalBanco.xss">
+      <DependentUpon>DataSetTotalBanco.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsCantidadMora.xsc">
+      <DependentUpon>dsCantidadMora.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dsCantidadMora.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCantidadMora.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dsCantidadMora.xss">
+      <DependentUpon>dsCantidadMora.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\dsReporte.xsc">
       <DependentUpon>dsReporte.xsd</DependentUpon>
     </None>
