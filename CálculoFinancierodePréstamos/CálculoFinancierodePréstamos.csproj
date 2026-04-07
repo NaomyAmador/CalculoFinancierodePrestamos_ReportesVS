@@ -74,6 +74,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CalculoFinancierodeReportesDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoFinancierodeReportesDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculoFinancierodeReportesDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\FrmActualizarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +208,83 @@
     <None Include="CalculoFinancierodeReportesDataSet1.xss">
       <DependentUpon>CalculoFinancierodeReportesDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="CalculoFinancierodeReportesDataSet2.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet2.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet3.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet3.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet4.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet4.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet5.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet5.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet6.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet6.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet7.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet7.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet8.xsc">
+      <DependentUpon>CalculoFinancierodeReportesDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalculoFinancierodeReportesDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculoFinancierodeReportesDataSet8.xss">
+      <DependentUpon>CalculoFinancierodeReportesDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -221,6 +333,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
