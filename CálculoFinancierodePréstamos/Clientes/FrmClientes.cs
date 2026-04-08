@@ -80,5 +80,10 @@ namespace CálculoFinancierodePréstamos.Clientes
             Application.Exit();
 
         }
+
+        private void textBoxuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
