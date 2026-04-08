@@ -79,5 +79,27 @@ namespace CálculoFinancierodePréstamos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cute_and_Friendly_Assistance_Bot___Wink_Thumb_Down_Left___4K_Full_Gesture_Loop__In__Action__Out_ {
+            get {
+                object obj = ResourceManager.GetObject("Cute and Friendly Assistance Bot _ Wink Thumb Down Left _ 4K Full Gesture Loop (I" +
+                        "n, Action, Out)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cute_and_Friendly_Assistance_Bot___Wink_Thumb_Down_Left___4K_Full_Gesture_Loop__In__Action__Out_1 {
+            get {
+                object obj = ResourceManager.GetObject("Cute and Friendly Assistance Bot _ Wink Thumb Down Left _ 4K Full Gesture Loop (I" +
+                        "n, Action, Out)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

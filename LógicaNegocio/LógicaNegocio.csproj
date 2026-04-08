@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LogicaNegocios_Prestamos.cs" />
+    <Compile Include="LogicaNegocio_Clientes.cs" />
     <Compile Include="LógicaNegocio_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -232,6 +232,12 @@
     <None Include="Resources\Btn_NoVerContraseña.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Cute and Friendly Assistance Bot _ Wink Thumb Down Left _ 4K Full Gesture Loop %28In, Action, Out%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute and Friendly Assistance Bot _ Wink Thumb Down Left _ 4K Full Gesture Loop %28In, Action, Out%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
