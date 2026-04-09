@@ -82,6 +82,41 @@
     </Compile>
     <Compile Include="Prestamos\Prestamo.Designer.cs">
       <DependentUpon>Prestamo.cs</DependentUpon>
+    <Compile Include="MenúPrincipal\FormAbonarCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormAbonarCuota.Designer.cs">
+      <DependentUpon>FormAbonarCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormMenúPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormMenúPrincipal.Designer.cs">
+      <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormPréstamosTomados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormPréstamosTomados.Designer.cs">
+      <DependentUpon>FormPréstamosTomados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormSolicitudPréstamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormSolicitudPréstamos.Designer.cs">
+      <DependentUpon>FormSolicitudPréstamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormVerCientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\FormVerCientes.Designer.cs">
+      <DependentUpon>FormVerCientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenúPrincipal\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenúPrincipal\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -139,6 +174,23 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prestamos\Prestamo.resx">
       <DependentUpon>Prestamo.cs</DependentUpon>
+    <EmbeddedResource Include="MenúPrincipal\FormAbonarCuota.resx">
+      <DependentUpon>FormAbonarCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormMenúPrincipal.resx">
+      <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormPréstamosTomados.resx">
+      <DependentUpon>FormPréstamosTomados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormSolicitudPréstamos.resx">
+      <DependentUpon>FormSolicitudPréstamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\FormVerCientes.resx">
+      <DependentUpon>FormVerCientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenúPrincipal\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
