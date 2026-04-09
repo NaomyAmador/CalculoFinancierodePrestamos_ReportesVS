@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Prestamos\Prestamo.Designer.cs">
       <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>  
     <Compile Include="MenúPrincipal\FormAbonarCuota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +175,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prestamos\Prestamo.resx">
       <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>  
     <EmbeddedResource Include="MenúPrincipal\FormAbonarCuota.resx">
       <DependentUpon>FormAbonarCuota.cs</DependentUpon>
     </EmbeddedResource>
