@@ -19,7 +19,7 @@ namespace LógicaNegocio
             return Prestamo.ObtenerFondoEmpresa();
         }
 
-        public string ValidarReglas(decimal sueldo, decimal montoPedido, decimal FondoBanco, int cantidadMoras)
+        public string ValidarReglas(decimal sueldo, decimal montoPedido, decimal FondoBanco, int cantidadMoras, string garantia)
         {
             if (cantidadMoras >= 3) 
                 return "DENEGADO: Cliente con 3 o más moras.";
@@ -27,7 +27,8 @@ namespace LógicaNegocio
                 return "DENEGADO: El monto excede 4 veces el sueldo mensual.";
             if (montoPedido >FondoBanco) 
                 return "DENEGADO: El banco no tiene fondos suficientes.";
-
+            if (string.IsNullOrWhiteSpace(garantia))
+                return "DENEGADO: Debe ingresar una garantía.";
 
             return "OK";
         }

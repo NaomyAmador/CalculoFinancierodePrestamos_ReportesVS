@@ -543,7 +543,17 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Value>=First(Fields!plazoMeses.Value, "DataSetPrestamos")</Value>
+                <Value>=IIF(
+    First(Fields!plazoMeses.Value, "DataSetPrestamos") Mod 12 = 0,
+    
+    IIF(
+        First(Fields!plazoMeses.Value, "DataSetPrestamos") / 12 = 1,
+        "1 año",
+        CStr(First(Fields!plazoMeses.Value, "DataSetPrestamos") / 12) &amp; " años"
+    ),
+    
+    CStr(First(Fields!plazoMeses.Value, "DataSetPrestamos")) &amp; " meses"
+)</Value>
                 <Style>
                   <FontFamily>Century Gothic</FontFamily>
                 </Style>
@@ -583,7 +593,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Value>=First(Fields!TasaInteresAplicada.Value, "DataSetPrestamos")</Value>
+                <Value>=Format(First(Fields!TasaInteresAplicada.Value, "DataSetPrestamos") / 100, "P2")</Value>
                 <Style>
                   <FontFamily>Century Gothic</FontFamily>
                   <Format>0.00%</Format>
@@ -594,8 +604,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox8</rd:DefaultName>
-        <Top>1.71978cm</Top>
-        <Left>1.45203cm</Left>
+        <Top>1.6845cm</Top>
+        <Left>1.45204cm</Left>
         <Height>0.6cm</Height>
         <Width>7.62233cm</Width>
         <ZIndex>3</ZIndex>
@@ -706,7 +716,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Meses</Value>
+                <Value />
                 <Style>
                   <FontFamily>Century Gothic</FontFamily>
                   <FontWeight>Bold</FontWeight>
@@ -717,8 +727,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox8</rd:DefaultName>
-        <Top>0.85167cm</Top>
-        <Left>3.90452cm</Left>
+        <Top>1.71978cm</Top>
+        <Left>13.52403cm</Left>
         <Height>0.6cm</Height>
         <Width>8.06683cm</Width>
         <ZIndex>7</ZIndex>

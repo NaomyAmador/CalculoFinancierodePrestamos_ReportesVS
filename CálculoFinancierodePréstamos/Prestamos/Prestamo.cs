@@ -31,7 +31,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
 
             listaActualParaReporte = (List<Cuotas>)dgv_Cuotas.DataSource;
 
-            // VALIDACIONES SEGURAS
+            
             if (!int.TryParse(txt_id.Text, out int idCliente))
             {
                 MessageBox.Show("ID inválido");
@@ -44,7 +44,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
                 return;
             }
 
-            // 🔥 LIMPIEZA DEL TEA (CLAVE)
+            
             string teaLimpio = txt_tea.Text.Replace("%", "").Trim();
 
             if (!decimal.TryParse(teaLimpio, out decimal tasa))
@@ -173,14 +173,24 @@ namespace CálculoFinancierodePréstamos.Prestamos
                 DateTime FechaInicio = dtp_FechaPrimerPago.Value;
 
 
-                string ResultadoValidacion = guardar.ValidarReglas(sueldo, MontoDeseado, FondoActual, moras);
+                string ResultadoValidacion = guardar.ValidarReglas(sueldo, MontoDeseado, FondoActual, moras, txt_garantia.Text);
 
                 if (ResultadoValidacion == "OK")
                 {
                     decimal tea = guardar.ObtenerTasaTEA(MesesFinales);
                     txt_tea.Enabled = false;
                     txt_tea.Text = tea.ToString() + "%";
-                    txt_TiempoM.Text = MesesFinales.ToString();
+
+                    if (MesesFinales % 12 == 0)
+                    {
+                        int años = MesesFinales / 12;
+                        txt_TiempoM.Text = años == 1 ? "1 año" : años + " años";
+                    }
+                    else
+                    {
+                        txt_TiempoM.Text = MesesFinales + " meses";
+                    }
+
                     double tem = guardar.CalcularTEM((double)tea);
                     txt_tem.Text = (tem * 100).ToString("N2") + "%";
 
@@ -195,7 +205,7 @@ namespace CálculoFinancierodePréstamos.Prestamos
                         dgv_Cuotas.Columns["FechaVencimiento"].HeaderText = "F. Vencimiento";
                     }
 
-                    // Alinear montos a la derecha
+                   
                     dgv_Cuotas.Columns["MontoCuota"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
                     txt_CuotasCalculadas.Text = ListaCuotas.Sum(c => c.MontoCuota).ToString("N2");

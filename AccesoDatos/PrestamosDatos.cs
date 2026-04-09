@@ -70,6 +70,18 @@ namespace AccesoDatos
                 SqlTransaction transaccion = Conexión.BeginTransaction();
                 try
                 {
+                    if (string.IsNullOrWhiteSpace(p.Garantia))
+                        throw new Exception("El préstamo requiere garantía.");
+
+                    // ✅ VALIDAR FONDOS DENTRO DE TRANSACCIÓN
+                    string validar = "SELECT CantidadDisponible FROM FondosDisponibles";
+                    SqlCommand cmdValidar = new SqlCommand(validar, Conexión, transaccion);
+                    decimal fondoActual = Convert.ToDecimal(cmdValidar.ExecuteScalar());
+
+                    if (fondoActual < p.MontoCapital)
+                        throw new Exception("Fondos insuficientes.");
+
+
                     string Consulta1 = @"INSERT INTO Prestamos (IdCliente, IdUsuario, MontoCapital, plazoMeses, TasaInteresAplicada, MontoTotal, Garantia, Fecha, Estado) VALUES (@IdCliente, @IdUsuario, @MontoCapital, @plazoMeses, @TasaInteresAplicada, @MontoTotal, @Garantia, @Fecha, @Estado); SELECT SCOPE_IDENTITY();";
                     SqlCommand AgregarPrestamo = new SqlCommand(Consulta1, Conexión, transaccion);
 
@@ -108,13 +120,14 @@ namespace AccesoDatos
                         Actualizar.ExecuteNonQuery();
                         transaccion.Commit();
                         return IdPrestamoHecho;
-                   
+
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     transaccion.Rollback();
-                 
-                    return 0;
+                    //return 0;
+
+                    throw new Exception("Error al guardar préstamo: " + ex.Message);
                 }
                
 

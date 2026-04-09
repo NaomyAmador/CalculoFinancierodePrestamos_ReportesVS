@@ -137,11 +137,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label5.Location = new System.Drawing.Point(814, 325);
+            this.label5.Location = new System.Drawing.Point(790, 326);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 23);
+            this.label5.Size = new System.Drawing.Size(222, 23);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Tiempo (Meses):";
+            this.label5.Text = "Tiempo del préstamo:";
             // 
             // txt_MontoDeseado
             // 
@@ -154,7 +154,7 @@
             // txt_tem
             // 
             this.txt_tem.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tem.Location = new System.Drawing.Point(991, 279);
+            this.txt_tem.Location = new System.Drawing.Point(1022, 280);
             this.txt_tem.Name = "txt_tem";
             this.txt_tem.Size = new System.Drawing.Size(229, 28);
             this.txt_tem.TabIndex = 9;
@@ -184,7 +184,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(814, 380);
+            this.label7.Location = new System.Drawing.Point(790, 376);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 23);
             this.label7.TabIndex = 12;
@@ -247,7 +247,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label9.Location = new System.Drawing.Point(815, 222);
+            this.label9.Location = new System.Drawing.Point(845, 222);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(369, 36);
             this.label9.TabIndex = 18;
@@ -288,7 +288,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(814, 284);
+            this.label6.Location = new System.Drawing.Point(790, 285);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 23);
             this.label6.TabIndex = 22;
@@ -297,7 +297,7 @@
             // txt_TiempoM
             // 
             this.txt_TiempoM.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TiempoM.Location = new System.Drawing.Point(991, 324);
+            this.txt_TiempoM.Location = new System.Drawing.Point(1022, 325);
             this.txt_TiempoM.Name = "txt_TiempoM";
             this.txt_TiempoM.Size = new System.Drawing.Size(229, 28);
             this.txt_TiempoM.TabIndex = 23;
@@ -305,7 +305,7 @@
             // txt_CuotasCalculadas
             // 
             this.txt_CuotasCalculadas.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CuotasCalculadas.Location = new System.Drawing.Point(991, 375);
+            this.txt_CuotasCalculadas.Location = new System.Drawing.Point(1022, 376);
             this.txt_CuotasCalculadas.Name = "txt_CuotasCalculadas";
             this.txt_CuotasCalculadas.Size = new System.Drawing.Size(229, 28);
             this.txt_CuotasCalculadas.TabIndex = 24;
@@ -571,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1277, 1011);
+            this.ClientSize = new System.Drawing.Size(1298, 1011);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.dtp_FechaPrimerPago);
