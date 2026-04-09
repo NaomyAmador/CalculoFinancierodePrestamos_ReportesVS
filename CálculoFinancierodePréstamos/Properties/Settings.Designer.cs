@@ -26,8 +26,10 @@ namespace CálculoFinancierodePréstamos.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-PHTCMGVS\\SQLEXPRESS;Initial Catalog=CalculoFinancierodeReporte" +
             "s;Integrated Security=True;Encrypt=False;TrustServerCertificate=True")]
+
         public string CalculoFinancierodeReportesConnectionString {
             get {
                 return ((string)(this["CalculoFinancierodeReportesConnectionString"]));

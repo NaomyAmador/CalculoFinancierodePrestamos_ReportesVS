@@ -9,6 +9,7 @@ namespace AccesoDatos
 {
     public class ConexiónBDD
     {
+
         private string CadenaConexión = "server=LAPTOP-PHTCMGVS\\SQLEXPRESS; database=CalculoFinancierodeReportes; integrated security=true;";
         //Servidor Naomy: LAPTOP-9G07MQQC\\SQLEXPRESS//
         //Servidor Arianna: LAPTOP-PHTCMGVS\SQLEXPRESS

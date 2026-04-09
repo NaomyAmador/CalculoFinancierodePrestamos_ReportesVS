@@ -1,7 +1,9 @@
-﻿using CálculoFinancierodePréstamos.Prestamos;
+
+using CálculoFinancierodePréstamos.Prestamos;
 using CálculoFinancierodePréstamos.Principal;
 using CálculoFinancierodePréstamos.Reportes;
 using Entidades;
+using CálculoFinancierodePréstamos.Clientes;
 using System;
 using System.Windows.Forms;
 
@@ -18,6 +20,7 @@ namespace CálculoFinancierodePréstamos
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+
             SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
            
@@ -25,6 +28,12 @@ namespace CálculoFinancierodePréstamos
             //Application.Run(new FrmReportes());
             //Application.Run(new CálculoFinancierodePréstamos.Clientes.FrmClientes("Admin"));
             Application.Run(new Prestamos.Prestamo(new User_Login()));
+
+            //Application.Run(new FrmLogin()
+            //{
+
+           // });
+
         }
     }
 }

@@ -49,12 +49,26 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="AddCliente.cs" />
+
+    <Compile Include="ActualizarCliente.cs" />
+    <Compile Include="AddPago.cs" />
+
     <Compile Include="AddUsuario.cs" />
+    <Compile Include="BuscarPrestamo.cs" />
     <Compile Include="ConexiónBDD.cs" />
+
     <Compile Include="PrestamosDatos.cs" />
+
+    <Compile Include="CuotasParaPago.cs" />
+    <Compile Include="HistorialPrestamos.cs" />
+    <Compile Include="PrestamoPago.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidaciónUsuario.cs" />
+    <Compile Include="ValidarCliente.cs" />
+    <Compile Include="VerCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
