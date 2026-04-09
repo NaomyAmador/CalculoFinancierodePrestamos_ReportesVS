@@ -174,7 +174,8 @@
     </Compile>
     <Compile Include="MenúPrincipal\Reportes.Designer.cs">
       <DependentUpon>Reportes.cs</DependentUpon>
-
+    </Compile>
+      
     <Compile Include="Clientes\frmDatosParaPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,13 +278,11 @@
       <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
 
-    <Compile Include="SqlServerTypes\Loader.cs" />
+
     <EmbeddedResource Include="Clientes\FrmActualizarCliente.resx">
       <DependentUpon>FrmActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\FrmClientes.resx">
-      <DependentUpon>FrmClientes.cs</DependentUpon>
-    </EmbeddedResource>
+   
     <EmbeddedResource Include="Clientes\frmDatosParaPago.resx">
       <DependentUpon>frmDatosParaPago.cs</DependentUpon>
     </EmbeddedResource>

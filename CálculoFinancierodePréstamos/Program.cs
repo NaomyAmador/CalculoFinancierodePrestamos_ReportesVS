@@ -23,16 +23,19 @@ namespace CálculoFinancierodePréstamos
 
             SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
-           
+
             //Application.Run(new FrmLogin());
+            Application.Run(new FrmHistorialPrestamos());
+            //Application.Run(new FrmPago(10));
+            //Application.Run(new FrmActualizarCliente());
             //Application.Run(new FrmReportes());
             //Application.Run(new CálculoFinancierodePréstamos.Clientes.FrmClientes("Admin"));
-            Application.Run(new Prestamos.Prestamo(new User_Login()));
+            //Application.Run(new Prestamos.Prestamo(new User_Login()));
 
             //Application.Run(new FrmLogin()
             //{
 
-           // });
+            // });
 
         }
     }
