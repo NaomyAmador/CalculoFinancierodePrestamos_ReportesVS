@@ -1,4 +1,4 @@
-﻿namespace CálculoFinancierodePréstamos.Clientes
+﻿namespace CálculoFinancierodePréstamos.HistorialPrestamosForms
 {
     partial class FrmHistorialPrestamos
     {

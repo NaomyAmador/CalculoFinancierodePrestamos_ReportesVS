@@ -15,6 +15,7 @@ namespace CálculoFinancierodePréstamos.Clientes
 {
     public partial class FrmReporteInfoCliente : Form
     {
+        public int IdClienteRecibido { get; set; }
         public FrmReporteInfoCliente()
         {
             InitializeComponent();
@@ -26,8 +27,8 @@ namespace CálculoFinancierodePréstamos.Clientes
 
             string user = SesionUsuario.IdUsuarioLogueado;
 
-       
-            DataTable dtTodo = servicio.ObtenerDatosReportePorNombreUsuario(user);
+
+            DataTable dtTodo = servicio.ObtenerDatosReportePorIdCliente(IdClienteRecibido);
 
             if (dtTodo.Rows.Count > 0)
             {

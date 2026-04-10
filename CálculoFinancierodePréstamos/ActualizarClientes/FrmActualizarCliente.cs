@@ -142,6 +142,35 @@ namespace CálculoFinancierodePréstamos.Clientes
             }
         }
 
+        private void btn_Reporte2_Click(object sender, EventArgs e)
+        {
+            
+            // Validar ID
+            if (!int.TryParse(txtIdCliente.Text, out int idCliente))
+            {
+                MessageBox.Show("Ingrese un ID válido");
+                return;
+            }
+
+            // Opcional pero recomendado: validar que exista el cliente
+            VerClientes datos = new VerClientes();
+            var cliente = datos.ObtenerClientePorId(idCliente);
+
+            if (cliente == null)
+            {
+                MessageBox.Show("Cliente no encontrado");
+                return;
+            }
+
+            // Abrir el reporte
+            FrmReporteInfoCliente reporte = new FrmReporteInfoCliente();
+
+            // 🔥 AQUÍ SE PASA EL ID
+            reporte.IdClienteRecibido = idCliente;
+
+            reporte.ShowDialog();
+        }
+    
     }
 
  }       

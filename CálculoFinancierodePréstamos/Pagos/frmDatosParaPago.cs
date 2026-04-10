@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CálculoFinancierodePréstamos.Clientes
+namespace CálculoFinancierodePréstamos.Pagos
 {
     public partial class frmDatosParaPago : Form
     {

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using AccesoDatos;
 using LógicaNegocio;
 
-namespace CálculoFinancierodePréstamos.Clientes
+namespace CálculoFinancierodePréstamos.Pagos
 {
     public partial class FrmPago : Form
     {

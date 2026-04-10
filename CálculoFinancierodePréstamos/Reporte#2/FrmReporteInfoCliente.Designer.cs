@@ -38,10 +38,11 @@
             // reportViewer1
             // 
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "CálculoFinancierodePréstamos.Clientes.ReporteInfoCliente.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(131, 373);
+            this.reportViewer1.Location = new System.Drawing.Point(97, 239);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(991, 1179);
+            this.reportViewer1.Size = new System.Drawing.Size(661, 755);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -49,31 +50,34 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(158, 284);
+            this.label1.Location = new System.Drawing.Point(126, 182);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(936, 68);
+            this.label1.Size = new System.Drawing.Size(614, 44);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Datos Del Cliente Y su Prestamo";
+            this.label1.Text = "Datos del Cliente y su Préstamo/s\r\n";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(483, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(353, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 268);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // FrmReporteInfoCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1292, 1643);
+            this.ClientSize = new System.Drawing.Size(861, 848);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmReporteInfoCliente";
             this.Text = "FrmReporteInfoCliente";
             this.Load += new System.EventHandler(this.FrmReporteInfoCliente_Load);

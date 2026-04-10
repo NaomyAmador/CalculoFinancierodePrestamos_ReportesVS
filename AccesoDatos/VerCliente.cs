@@ -63,8 +63,45 @@ namespace AccesoDatos
             }
             return dt;
         }
+        public DataTable ObtenerDatosReportePorIdCliente(int idCliente)
+        {
+            DataTable dt = new DataTable();
 
-       
+            using (SqlConnection conexion = conexionBDD.ObtenerConexión())
+            {
+                string query = @"SELECT 
+                            C.IdCliente,
+                            C.NombreCompleto,
+                            C.Correo,
+                            C.Telefono,
+                            C.Direccion,
+                            C.SueldoMensual,
+                            P.IdPrestamo,
+                            P.MontoCapital,
+                            P.PlazoMeses,
+                            P.TasaInteresAplicada,
+                            P.MontoTotal,
+                            P.Estado
+                         FROM Clientes C
+                         LEFT JOIN Prestamos P ON C.IdCliente = P.IdCliente
+                         WHERE C.IdCliente = @IdCliente";
+
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+
+            return dt;
+        }
     }
+
+
+
+
+
+
 }
+
  

@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace CálculoFinancierodePréstamos.Clientes
+namespace CálculoFinancierodePréstamos.HistorialPrestamosForms
 {
     public partial class FrmHistorialPrestamos : Form
     {
