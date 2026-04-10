@@ -1,5 +1,6 @@
 ﻿using CálculoFinancierodePréstamos.ActualizarClientes;
 using CálculoFinancierodePréstamos.Clientes;
+using CálculoFinancierodePréstamos.HistorialPrestamosForms;
 using CálculoFinancierodePréstamos.Pagos;
 using CálculoFinancierodePréstamos.Prestamos;
 using System;
@@ -49,9 +50,9 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormPréstamosTomados_Click(object sender, EventArgs e)
         {
-            FormPréstamosTomados FormBotónNúmero4 = new FormPréstamosTomados();
-            FormBotónNúmero4.Owner = this;
-            FormBotónNúmero4.Show();
+            FrmHistorialPrestamos FormBotónNúmero5 = new FrmHistorialPrestamos();
+            FormBotónNúmero5.Owner = this;
+            FormBotónNúmero5.Show();
             this.Hide();
         }
 
