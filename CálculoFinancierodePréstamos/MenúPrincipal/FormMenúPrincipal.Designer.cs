@@ -55,12 +55,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Btn_FrmClientes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Decoración)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PicBox_Decoración
@@ -113,7 +117,7 @@
             this.Lbl_Decoración4.ForeColor = System.Drawing.Color.DarkBlue;
             this.Lbl_Decoración4.Location = new System.Drawing.Point(243, 96);
             this.Lbl_Decoración4.Name = "Lbl_Decoración4";
-            this.Lbl_Decoración4.Size = new System.Drawing.Size(380, 17);
+            this.Lbl_Decoración4.Size = new System.Drawing.Size(352, 17);
             this.Lbl_Decoración4.TabIndex = 4;
             this.Lbl_Decoración4.Text = "Sé capaz de Observar los Resulatdos de tus Transacciones";
             // 
@@ -167,7 +171,7 @@
             this.Btn_FormPréstamosTomados.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormPréstamosTomados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormPréstamosTomados.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormPréstamosTomados.Location = new System.Drawing.Point(171, 497);
+            this.Btn_FormPréstamosTomados.Location = new System.Drawing.Point(298, 496);
             this.Btn_FormPréstamosTomados.Name = "Btn_FormPréstamosTomados";
             this.Btn_FormPréstamosTomados.Size = new System.Drawing.Size(171, 34);
             this.Btn_FormPréstamosTomados.TabIndex = 9;
@@ -180,7 +184,7 @@
             this.Btn_FormSolicitudPréstamos.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormSolicitudPréstamos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormSolicitudPréstamos.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormSolicitudPréstamos.Location = new System.Drawing.Point(63, 314);
+            this.Btn_FormSolicitudPréstamos.Location = new System.Drawing.Point(298, 315);
             this.Btn_FormSolicitudPréstamos.Name = "Btn_FormSolicitudPréstamos";
             this.Btn_FormSolicitudPréstamos.Size = new System.Drawing.Size(161, 39);
             this.Btn_FormSolicitudPréstamos.TabIndex = 10;
@@ -193,11 +197,11 @@
             this.Btn_FormReportes.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormReportes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormReportes.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormReportes.Location = new System.Drawing.Point(420, 497);
+            this.Btn_FormReportes.Location = new System.Drawing.Point(533, 496);
             this.Btn_FormReportes.Name = "Btn_FormReportes";
             this.Btn_FormReportes.Size = new System.Drawing.Size(165, 34);
             this.Btn_FormReportes.TabIndex = 11;
-            this.Btn_FormReportes.Text = "Reportes";
+            this.Btn_FormReportes.Text = "Reportes Generales";
             this.Btn_FormReportes.UseVisualStyleBackColor = false;
             this.Btn_FormReportes.Click += new System.EventHandler(this.Btn_FormReportes_Click);
             // 
@@ -206,11 +210,11 @@
             this.Btn_FormAbonarCuota.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormAbonarCuota.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormAbonarCuota.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormAbonarCuota.Location = new System.Drawing.Point(302, 316);
+            this.Btn_FormAbonarCuota.Location = new System.Drawing.Point(539, 318);
             this.Btn_FormAbonarCuota.Name = "Btn_FormAbonarCuota";
             this.Btn_FormAbonarCuota.Size = new System.Drawing.Size(155, 35);
             this.Btn_FormAbonarCuota.TabIndex = 12;
-            this.Btn_FormAbonarCuota.Text = "Abonar Cuota";
+            this.Btn_FormAbonarCuota.Text = "Abonar a Cuotas";
             this.Btn_FormAbonarCuota.UseVisualStyleBackColor = false;
             this.Btn_FormAbonarCuota.Click += new System.EventHandler(this.Btn_FormAbonarCuota_Click);
             // 
@@ -219,7 +223,7 @@
             this.Btn_FormVerClientes.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormVerClientes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormVerClientes.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormVerClientes.Location = new System.Drawing.Point(537, 318);
+            this.Btn_FormVerClientes.Location = new System.Drawing.Point(64, 497);
             this.Btn_FormVerClientes.Name = "Btn_FormVerClientes";
             this.Btn_FormVerClientes.Size = new System.Drawing.Size(158, 33);
             this.Btn_FormVerClientes.TabIndex = 13;
@@ -230,7 +234,7 @@
             // PicBox_DecoraciónBtn1
             // 
             this.PicBox_DecoraciónBtn1.Image = ((System.Drawing.Image)(resources.GetObject("PicBox_DecoraciónBtn1.Image")));
-            this.PicBox_DecoraciónBtn1.Location = new System.Drawing.Point(74, 194);
+            this.PicBox_DecoraciónBtn1.Location = new System.Drawing.Point(310, 195);
             this.PicBox_DecoraciónBtn1.Name = "PicBox_DecoraciónBtn1";
             this.PicBox_DecoraciónBtn1.Size = new System.Drawing.Size(136, 115);
             this.PicBox_DecoraciónBtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -240,9 +244,9 @@
             // PicBox_DecoraciónBtn4
             // 
             this.PicBox_DecoraciónBtn4.Image = ((System.Drawing.Image)(resources.GetObject("PicBox_DecoraciónBtn4.Image")));
-            this.PicBox_DecoraciónBtn4.Location = new System.Drawing.Point(184, 373);
+            this.PicBox_DecoraciónBtn4.Location = new System.Drawing.Point(310, 372);
             this.PicBox_DecoraciónBtn4.Name = "PicBox_DecoraciónBtn4";
-            this.PicBox_DecoraciónBtn4.Size = new System.Drawing.Size(146, 118);
+            this.PicBox_DecoraciónBtn4.Size = new System.Drawing.Size(146, 120);
             this.PicBox_DecoraciónBtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_DecoraciónBtn4.TabIndex = 15;
             this.PicBox_DecoraciónBtn4.TabStop = false;
@@ -250,7 +254,7 @@
             // PicBox_DecoraciónBtn2
             // 
             this.PicBox_DecoraciónBtn2.Image = ((System.Drawing.Image)(resources.GetObject("PicBox_DecoraciónBtn2.Image")));
-            this.PicBox_DecoraciónBtn2.Location = new System.Drawing.Point(310, 195);
+            this.PicBox_DecoraciónBtn2.Location = new System.Drawing.Point(547, 195);
             this.PicBox_DecoraciónBtn2.Name = "PicBox_DecoraciónBtn2";
             this.PicBox_DecoraciónBtn2.Size = new System.Drawing.Size(138, 118);
             this.PicBox_DecoraciónBtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -260,7 +264,7 @@
             // PicBox_DecoraciónBtn5
             // 
             this.PicBox_DecoraciónBtn5.Image = ((System.Drawing.Image)(resources.GetObject("PicBox_DecoraciónBtn5.Image")));
-            this.PicBox_DecoraciónBtn5.Location = new System.Drawing.Point(431, 373);
+            this.PicBox_DecoraciónBtn5.Location = new System.Drawing.Point(545, 373);
             this.PicBox_DecoraciónBtn5.Name = "PicBox_DecoraciónBtn5";
             this.PicBox_DecoraciónBtn5.Size = new System.Drawing.Size(140, 119);
             this.PicBox_DecoraciónBtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -270,7 +274,7 @@
             // PicBox_DecoraciónBtn3
             // 
             this.PicBox_DecoraciónBtn3.Image = ((System.Drawing.Image)(resources.GetObject("PicBox_DecoraciónBtn3.Image")));
-            this.PicBox_DecoraciónBtn3.Location = new System.Drawing.Point(545, 194);
+            this.PicBox_DecoraciónBtn3.Location = new System.Drawing.Point(73, 373);
             this.PicBox_DecoraciónBtn3.Name = "PicBox_DecoraciónBtn3";
             this.PicBox_DecoraciónBtn3.Size = new System.Drawing.Size(140, 119);
             this.PicBox_DecoraciónBtn3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -326,7 +330,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(354, 408);
+            this.label2.Location = new System.Drawing.Point(236, 419);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 56);
             this.label2.TabIndex = 27;
@@ -337,7 +341,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(107, 417);
+            this.label3.Location = new System.Drawing.Point(-3, 428);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 47);
             this.label3.TabIndex = 28;
@@ -348,11 +352,44 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(578, 417);
+            this.label4.Location = new System.Drawing.Point(691, 428);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 47);
             this.label4.TabIndex = 29;
             this.label4.Text = "✦•";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label5.Location = new System.Drawing.Point(468, 419);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 56);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "✦";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(72, 195);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Btn_FrmClientes
+            // 
+            this.Btn_FrmClientes.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_FrmClientes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_FrmClientes.ForeColor = System.Drawing.Color.White;
+            this.Btn_FrmClientes.Location = new System.Drawing.Point(61, 318);
+            this.Btn_FrmClientes.Name = "Btn_FrmClientes";
+            this.Btn_FrmClientes.Size = new System.Drawing.Size(162, 33);
+            this.Btn_FrmClientes.TabIndex = 32;
+            this.Btn_FrmClientes.Text = "Crear Cliente";
+            this.Btn_FrmClientes.UseVisualStyleBackColor = false;
             // 
             // FormMenúPrincipal
             // 
@@ -360,6 +397,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(760, 555);
+            this.Controls.Add(this.Btn_FrmClientes);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -394,6 +434,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,5 +468,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_FrmClientes;
     }
 }
