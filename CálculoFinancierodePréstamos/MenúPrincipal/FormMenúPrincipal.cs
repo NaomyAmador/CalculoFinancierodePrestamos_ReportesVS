@@ -32,6 +32,10 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormAbonarCuota_Click(object sender, EventArgs e)
         {
+            frmDatosParaPago FormBotónNúmero3 = new frmDatosParaPago();
+            FormBotónNúmero3.Owner = this;
+            FormBotónNúmero3.Show();
+            this.Hide();
         }
 
         private void Btn_FormVerClientes_Click(object sender, EventArgs e)
