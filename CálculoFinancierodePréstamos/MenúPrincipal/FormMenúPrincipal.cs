@@ -3,6 +3,7 @@ using CálculoFinancierodePréstamos.Clientes;
 using CálculoFinancierodePréstamos.HistorialPrestamosForms;
 using CálculoFinancierodePréstamos.Pagos;
 using CálculoFinancierodePréstamos.Prestamos;
+using CálculoFinancierodePréstamos.Principal;
 using CálculoFinancierodePréstamos.Reportes;
 using Entidades;
 using System;
@@ -74,6 +75,13 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
             FormBotónNúmero1.Owner = this;
             FormBotónNúmero1.Show();
             this.Hide();
+        }
+
+        private void Btn_CerrarSesión_Click(object sender, EventArgs e)
+        {
+            FrmLogin VolveralLogin = new FrmLogin();
+            VolveralLogin.Show();
+            this.Hide();        
         }
     }
 }

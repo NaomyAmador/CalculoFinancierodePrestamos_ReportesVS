@@ -58,6 +58,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_FrmClientes = new System.Windows.Forms.Button();
+            this.Btn_CerrarSesión = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Decoración)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_DecoraciónBtn4)).BeginInit();
@@ -392,12 +393,26 @@
             this.Btn_FrmClientes.UseVisualStyleBackColor = false;
             this.Btn_FrmClientes.Click += new System.EventHandler(this.Btn_FrmClientes_Click);
             // 
+            // Btn_CerrarSesión
+            // 
+            this.Btn_CerrarSesión.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Btn_CerrarSesión.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CerrarSesión.ForeColor = System.Drawing.Color.White;
+            this.Btn_CerrarSesión.Location = new System.Drawing.Point(228, 563);
+            this.Btn_CerrarSesión.Name = "Btn_CerrarSesión";
+            this.Btn_CerrarSesión.Size = new System.Drawing.Size(321, 34);
+            this.Btn_CerrarSesión.TabIndex = 33;
+            this.Btn_CerrarSesión.Text = "Cerrar Sesión (Volver al Login)";
+            this.Btn_CerrarSesión.UseVisualStyleBackColor = false;
+            this.Btn_CerrarSesión.Click += new System.EventHandler(this.Btn_CerrarSesión_Click);
+            // 
             // FormMenúPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(760, 555);
+            this.ClientSize = new System.Drawing.Size(760, 609);
+            this.Controls.Add(this.Btn_CerrarSesión);
             this.Controls.Add(this.Btn_FrmClientes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -472,5 +487,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_FrmClientes;
+        private System.Windows.Forms.Button Btn_CerrarSesión;
     }
 }

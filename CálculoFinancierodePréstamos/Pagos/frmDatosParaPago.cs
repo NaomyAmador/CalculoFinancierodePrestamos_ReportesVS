@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
+using LógicaNegocio;
 
 namespace CálculoFinancierodePréstamos.Pagos
 {
@@ -15,6 +17,7 @@ namespace CálculoFinancierodePréstamos.Pagos
     {
         BuscarPrestamo busquedaAD = new BuscarPrestamo();
         int idPrestamo = 0;
+        private User_Login _idPrestamo;
         public frmDatosParaPago()
         {
             InitializeComponent();
@@ -27,7 +30,6 @@ namespace CálculoFinancierodePréstamos.Pagos
 
         private void Btn_Continuar_Click(object sender, EventArgs e)
         {
-           
             idPrestamo = busquedaAD.ObtenerIdPrestamo(txtUsuario.Text, txtNombreCliente.Text );
 
             if (idPrestamo == 0)

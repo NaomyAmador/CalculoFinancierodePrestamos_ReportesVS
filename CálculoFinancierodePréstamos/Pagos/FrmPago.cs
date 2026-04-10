@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccesoDatos;
 using LógicaNegocio;
+using CálculoFinancierodePréstamos.MenúPrincipal;
 
 namespace CálculoFinancierodePréstamos.Pagos
 {
@@ -21,7 +22,7 @@ namespace CálculoFinancierodePréstamos.Pagos
         private CuotasParaPago cuotaAD = new CuotasParaPago();
         private PrestamoPago prestamoAD = new PrestamoPago();
         private LógicaNegocio_Pagos Pago = new LógicaNegocio_Pagos();
-
+        private User_Login _idPrestamo;
         public FrmPago(int idPrestamo)
         {
             InitializeComponent();
@@ -112,8 +113,10 @@ namespace CálculoFinancierodePréstamos.Pagos
 
         private void Btn_VolverMenúPrincipal_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
-            this.Close();
+            FormMenúPrincipal DirigirsealMenúPrincipal = new FormMenúPrincipal(null);
+            DirigirsealMenúPrincipal.Show();
+            this.Hide();
+
         }
     }
 }
