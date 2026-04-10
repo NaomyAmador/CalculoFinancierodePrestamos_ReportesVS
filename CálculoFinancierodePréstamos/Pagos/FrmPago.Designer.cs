@@ -49,7 +49,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Btn_Crear = new System.Windows.Forms.Button();
             this.btnPagar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.txtMesesRestantes = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuotaActual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,18 +72,17 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label17.Location = new System.Drawing.Point(693, 191);
+            this.label17.Location = new System.Drawing.Point(770, 193);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 34);
+            this.label17.Size = new System.Drawing.Size(0, 34);
             this.label17.TabIndex = 107;
-            this.label17.Text = "✦";
             // 
             // btn_Buscar
             // 
             this.btn_Buscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_Buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_Buscar.Location = new System.Drawing.Point(586, 186);
+            this.btn_Buscar.Location = new System.Drawing.Point(663, 188);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(97, 42);
             this.btn_Buscar.TabIndex = 106;
@@ -106,7 +105,7 @@
             // txtTotalPagar
             // 
             this.txtTotalPagar.Location = new System.Drawing.Point(595, 529);
-            this.txtTotalPagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalPagar.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalPagar.Name = "txtTotalPagar";
             this.txtTotalPagar.Size = new System.Drawing.Size(253, 22);
             this.txtTotalPagar.TabIndex = 104;
@@ -114,7 +113,7 @@
             // txtMora
             // 
             this.txtMora.Location = new System.Drawing.Point(315, 445);
-            this.txtMora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMora.Margin = new System.Windows.Forms.Padding(2);
             this.txtMora.Name = "txtMora";
             this.txtMora.Size = new System.Drawing.Size(305, 22);
             this.txtMora.TabIndex = 103;
@@ -122,7 +121,7 @@
             // txtCuota
             // 
             this.txtCuota.Location = new System.Drawing.Point(315, 396);
-            this.txtCuota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCuota.Margin = new System.Windows.Forms.Padding(2);
             this.txtCuota.Name = "txtCuota";
             this.txtCuota.Size = new System.Drawing.Size(305, 22);
             this.txtCuota.TabIndex = 102;
@@ -130,7 +129,7 @@
             // txtInteres
             // 
             this.txtInteres.Location = new System.Drawing.Point(315, 341);
-            this.txtInteres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtInteres.Margin = new System.Windows.Forms.Padding(2);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(108, 22);
             this.txtInteres.TabIndex = 101;
@@ -138,7 +137,7 @@
             // txtMontoAnterior
             // 
             this.txtMontoAnterior.Location = new System.Drawing.Point(315, 287);
-            this.txtMontoAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMontoAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoAnterior.Name = "txtMontoAnterior";
             this.txtMontoAnterior.Size = new System.Drawing.Size(214, 22);
             this.txtMontoAnterior.TabIndex = 100;
@@ -159,7 +158,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Location = new System.Drawing.Point(95, 282);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(8, 248);
             this.panel1.TabIndex = 98;
@@ -223,7 +222,7 @@
             // 
             this.dgvCuotaActual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCuotaActual.Location = new System.Drawing.Point(61, 596);
-            this.dgvCuotaActual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCuotaActual.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCuotaActual.Name = "dgvCuotaActual";
             this.dgvCuotaActual.RowHeadersWidth = 82;
             this.dgvCuotaActual.RowTemplate.Height = 33;
@@ -247,7 +246,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(525, 191);
+            this.label13.Location = new System.Drawing.Point(602, 193);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 34);
             this.label13.TabIndex = 90;
@@ -269,23 +268,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label9.Location = new System.Drawing.Point(839, 193);
+            this.label9.Location = new System.Drawing.Point(1093, 193);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 34);
             this.label9.TabIndex = 88;
             this.label9.Text = "✦•";
-            // 
-            // Btn_Crear
-            // 
-            this.Btn_Crear.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Crear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Crear.ForeColor = System.Drawing.Color.White;
-            this.Btn_Crear.Location = new System.Drawing.Point(733, 188);
-            this.Btn_Crear.Name = "Btn_Crear";
-            this.Btn_Crear.Size = new System.Drawing.Size(97, 42);
-            this.Btn_Crear.TabIndex = 87;
-            this.Btn_Crear.Text = "Volver";
-            this.Btn_Crear.UseVisualStyleBackColor = false;
             // 
             // btnPagar
             // 
@@ -391,7 +378,7 @@
             // txtMesActual
             // 
             this.txtMesActual.Location = new System.Drawing.Point(833, 287);
-            this.txtMesActual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMesActual.Margin = new System.Windows.Forms.Padding(2);
             this.txtMesActual.Name = "txtMesActual";
             this.txtMesActual.Size = new System.Drawing.Size(214, 22);
             this.txtMesActual.TabIndex = 100;
@@ -399,7 +386,7 @@
             // txtMesesRestantes
             // 
             this.txtMesesRestantes.Location = new System.Drawing.Point(833, 340);
-            this.txtMesesRestantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMesesRestantes.Margin = new System.Windows.Forms.Padding(2);
             this.txtMesesRestantes.Name = "txtMesesRestantes";
             this.txtMesesRestantes.Size = new System.Drawing.Size(108, 22);
             this.txtMesesRestantes.TabIndex = 101;
@@ -420,7 +407,7 @@
             this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
-            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(1075, 524);
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(835, 193);
             this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
             this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 32);
             this.Btn_VolverMenúPrincipal.TabIndex = 109;
@@ -428,12 +415,24 @@
             this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
             this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label6.Location = new System.Drawing.Point(776, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 34);
+            this.label6.TabIndex = 110;
+            this.label6.Text = "✦";
+            // 
             // FrmPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1339, 675);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label17);
@@ -461,14 +460,13 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Btn_Crear);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPago";
             this.Text = "FrmPago";
             this.Load += new System.EventHandler(this.FrmPago_Load);
@@ -501,7 +499,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button Btn_Crear;
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -515,5 +512,6 @@
         private System.Windows.Forms.TextBox txtMesesRestantes;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
+        private System.Windows.Forms.Label label6;
     }
 }

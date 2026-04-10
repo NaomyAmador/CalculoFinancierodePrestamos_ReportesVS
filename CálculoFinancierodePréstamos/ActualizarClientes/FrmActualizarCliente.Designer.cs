@@ -34,7 +34,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Btn_Crear = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.btn_Reporte2 = new System.Windows.Forms.Button();
             this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -106,32 +106,19 @@
             this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label12.Location = new System.Drawing.Point(1048, 168);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 34);
+            this.label12.Size = new System.Drawing.Size(0, 34);
             this.label12.TabIndex = 59;
-            this.label12.Text = "✦";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label9.Location = new System.Drawing.Point(1199, 168);
+            this.label9.Location = new System.Drawing.Point(1354, 168);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 34);
             this.label9.TabIndex = 58;
             this.label9.Text = "✦•";
-            // 
-            // Btn_Crear
-            // 
-            this.Btn_Crear.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Crear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Crear.ForeColor = System.Drawing.Color.White;
-            this.Btn_Crear.Location = new System.Drawing.Point(1092, 163);
-            this.Btn_Crear.Name = "Btn_Crear";
-            this.Btn_Crear.Size = new System.Drawing.Size(97, 42);
-            this.Btn_Crear.TabIndex = 57;
-            this.Btn_Crear.Text = "Volver";
-            this.Btn_Crear.UseVisualStyleBackColor = false;
             // 
             // btnActualizar
             // 
@@ -391,13 +378,24 @@
             this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
-            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(1210, 578);
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(1096, 161);
             this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
-            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 32);
+            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 48);
             this.Btn_VolverMenúPrincipal.TabIndex = 80;
             this.Btn_VolverMenúPrincipal.Text = "Volver al Menú Principal ↺";
             this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
             this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label18.Location = new System.Drawing.Point(1054, 166);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 34);
+            this.label18.TabIndex = 81;
+            this.label18.Text = "✦";
             // 
             // FrmActualizarCliente
             // 
@@ -405,6 +403,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1474, 638);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.btn_Reporte2);
             this.Controls.Add(this.label17);
@@ -427,7 +426,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Btn_Crear);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label6);
@@ -454,7 +452,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button Btn_Crear;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Label label6;
@@ -480,5 +477,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btn_Reporte2;
         private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
+        private System.Windows.Forms.Label label18;
     }
 }
