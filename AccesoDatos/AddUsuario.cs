@@ -22,5 +22,38 @@ namespace AccesoDatos
                 return IdAgregado;
             }
         }
+        public User_Login ObtenerUsuarioPorCredenciales(string usuario, string contraseña)
+        {
+            using (SqlConnection conexion = conexiónBDD.ObtenerConexión())
+            {
+                string consulta = @"SELECT IdUsuario, usuario, Contraseña 
+                            FROM User_Login 
+                            WHERE usuario = @usuario AND Contraseña = @contraseña";
+
+                SqlCommand cmd = new SqlCommand(consulta, conexion);
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@contraseña", contraseña);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    User_Login user = new User_Login();
+                    user.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
+                    user.usuario = reader["usuario"].ToString();
+                    user.Contraseña = reader["Contraseña"].ToString();
+
+                    return user;
+                }
+
+                return null;
+            }
+        }
+
+
+
+
+
+
     }
 }

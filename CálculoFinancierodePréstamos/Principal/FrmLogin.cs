@@ -43,38 +43,37 @@ namespace CálculoFinancierodePréstamos.Principal
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            LógicaNegocio_Usuario usuario = new LógicaNegocio_Usuario();
+            LógicaNegocio_Usuario usuarioLN = new LógicaNegocio_Usuario();
 
-            bool existe = usuario.LoginUsuario(TxtBox_Usuario.Text, TxtBox_Contraseña.Text);
+            User_Login usuarioLogueado = usuarioLN.ObtenerUsuario(
+                TxtBox_Usuario.Text,
+                TxtBox_Contraseña.Text
+            );
 
-            if (existe)
+            if (usuarioLogueado != null)
             {
-                SesionUsuario.IdUsuarioLogueado = TxtBox_Usuario.Text;
-
-                //Apartado para que dirija al usuario al menú una vez hecho el login correctamente.
-                FormMenúPrincipal MenúPrincipal = new FormMenúPrincipal();
-                MenúPrincipal.Show();
+                FormMenúPrincipal menu = new FormMenúPrincipal(usuarioLogueado);
+                menu.Show();
                 this.Hide();
+
                 Intentos = 3;
             }
             else
             {
                 Intentos--;
-                MessageBox.Show("Usuario o contraseña incorrectos, ¡asegúrate de que estén bien escritos!");
+                MessageBox.Show("Usuario o contraseña incorrectos");
             }
 
             if (Intentos == 0)
             {
                 TxtBox_Usuario.Enabled = false;
                 TxtBox_Contraseña.Enabled = false;
-                Btn_VerContraseña.Enabled = false;
-                Btn_NoVerContraseña.Enabled = false;
                 Btn_Login.Enabled = false;
                 Btn_Crear.Enabled = false;
                 Btn_Cerrar.Enabled = false;
+
                 ProgressBar_Fallos.Value = 0;
                 Tiempo = 0;
-                Lbl_TextoBarradeEspera.Text = "Espere mientras procesamos los fallos...";
                 Timer_ProgressBar.Start();
             }
         }

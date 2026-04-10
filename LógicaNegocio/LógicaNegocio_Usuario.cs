@@ -26,5 +26,18 @@ namespace LógicaNegocio
 
             return Validación.ValidarLogin(Usuarioexistente, ContrasenaExistente);
         }
+
+        public User_Login ObtenerUsuario(string usuario, string contraseña)
+        {
+            if (usuario == "" || contraseña == "")
+            {
+                throw new Exception("Campos vacíos, ¡completa estos mismos antes de continuar!");
+            }
+
+            return DatosNecesarios.ObtenerUsuarioPorCredenciales(usuario, contraseña);
+        }
     }
-}
+        
+
+
+ }

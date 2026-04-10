@@ -4,6 +4,7 @@ using CálculoFinancierodePréstamos.HistorialPrestamosForms;
 using CálculoFinancierodePréstamos.Pagos;
 using CálculoFinancierodePréstamos.Prestamos;
 using CálculoFinancierodePréstamos.Reportes;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,16 +19,18 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 {
     public partial class FormMenúPrincipal : Form
     {
-        public FormMenúPrincipal()
+        private User_Login _usuarioLogueado;
+        public FormMenúPrincipal(User_Login usuario)
         {
             InitializeComponent();
+            _usuarioLogueado = usuario;
         }
 
         private void Btn_FormSolicitudPréstamos_Click(object sender, EventArgs e)
         {
             //el null se utilizo aquí porque en el FrmPrestamo recibe valores en una variable.
             //Como no se usa indique que esta no recibiera nada (se quedara vacía con null, pero no la borré).
-            Prestamo FormBotónNúmero2 = new Prestamo(null);
+            Prestamo FormBotónNúmero2 = new Prestamo(_usuarioLogueado);
             FormBotónNúmero2.Owner = this;
             FormBotónNúmero2.Show();
             this.Hide();

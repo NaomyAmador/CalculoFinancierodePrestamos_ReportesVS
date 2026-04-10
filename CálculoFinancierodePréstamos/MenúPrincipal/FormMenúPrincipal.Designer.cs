@@ -171,9 +171,9 @@
             this.Btn_FormPréstamosTomados.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormPréstamosTomados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormPréstamosTomados.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormPréstamosTomados.Location = new System.Drawing.Point(298, 496);
+            this.Btn_FormPréstamosTomados.Location = new System.Drawing.Point(289, 315);
             this.Btn_FormPréstamosTomados.Name = "Btn_FormPréstamosTomados";
-            this.Btn_FormPréstamosTomados.Size = new System.Drawing.Size(171, 34);
+            this.Btn_FormPréstamosTomados.Size = new System.Drawing.Size(195, 34);
             this.Btn_FormPréstamosTomados.TabIndex = 9;
             this.Btn_FormPréstamosTomados.Text = "Préstamos Tomados";
             this.Btn_FormPréstamosTomados.UseVisualStyleBackColor = false;
@@ -184,9 +184,9 @@
             this.Btn_FormSolicitudPréstamos.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormSolicitudPréstamos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormSolicitudPréstamos.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormSolicitudPréstamos.Location = new System.Drawing.Point(298, 315);
+            this.Btn_FormSolicitudPréstamos.Location = new System.Drawing.Point(293, 498);
             this.Btn_FormSolicitudPréstamos.Name = "Btn_FormSolicitudPréstamos";
-            this.Btn_FormSolicitudPréstamos.Size = new System.Drawing.Size(161, 39);
+            this.Btn_FormSolicitudPréstamos.Size = new System.Drawing.Size(191, 34);
             this.Btn_FormSolicitudPréstamos.TabIndex = 10;
             this.Btn_FormSolicitudPréstamos.Text = "Solicitud Préstamos";
             this.Btn_FormSolicitudPréstamos.UseVisualStyleBackColor = false;
@@ -197,9 +197,9 @@
             this.Btn_FormReportes.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_FormReportes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_FormReportes.ForeColor = System.Drawing.Color.White;
-            this.Btn_FormReportes.Location = new System.Drawing.Point(533, 496);
+            this.Btn_FormReportes.Location = new System.Drawing.Point(522, 498);
             this.Btn_FormReportes.Name = "Btn_FormReportes";
-            this.Btn_FormReportes.Size = new System.Drawing.Size(165, 34);
+            this.Btn_FormReportes.Size = new System.Drawing.Size(192, 34);
             this.Btn_FormReportes.TabIndex = 11;
             this.Btn_FormReportes.Text = "Reportes Generales";
             this.Btn_FormReportes.UseVisualStyleBackColor = false;
