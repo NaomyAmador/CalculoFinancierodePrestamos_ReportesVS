@@ -1,4 +1,4 @@
-﻿namespace CálculoFinancierodePréstamos.Clientes
+﻿namespace CálculoFinancierodePréstamos.Reporte2
 {
     partial class FrmReporteInfoCliente
     {

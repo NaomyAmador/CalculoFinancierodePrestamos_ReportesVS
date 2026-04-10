@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 
 
-namespace CálculoFinancierodePréstamos.Clientes
+namespace CálculoFinancierodePréstamos.ActualizarClientes
 {
     public partial class FrmActualizarCliente : Form
     {
@@ -163,7 +163,7 @@ namespace CálculoFinancierodePréstamos.Clientes
             }
 
             // Abrir el reporte
-            FrmReporteInfoCliente reporte = new FrmReporteInfoCliente();
+            Reporte2.FrmReporteInfoCliente reporte = new Reporte2.FrmReporteInfoCliente();
 
             // 🔥 AQUÍ SE PASA EL ID
             reporte.IdClienteRecibido = idCliente;

@@ -28,7 +28,7 @@ namespace CálculoFinancierodePréstamos
             //Application.Run(new CálculoFinancierodePréstamos.Pagos.frmDatosParaPago());
             //Application.Run(new FrmHistorialPrestamos());
             //Application.Run(new FrmPago(10));
-            Application.Run(new FrmActualizarCliente());
+            Application.Run(new CálculoFinancierodePréstamos.ActualizarClientes.FrmActualizarCliente());
             //Application.Run(new FrmReportes());
             //Application.Run(new CálculoFinancierodePréstamos.Clientes.FrmClientes("Admin"));
             //Application.Run(new Prestamos.Prestamo(new User_Login()));

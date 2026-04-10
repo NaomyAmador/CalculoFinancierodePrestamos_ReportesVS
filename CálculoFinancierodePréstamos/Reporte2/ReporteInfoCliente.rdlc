@@ -333,6 +333,8 @@
                   <FontStyle>Italic</FontStyle>
                   <FontFamily>garamond</FontFamily>
                   <FontSize>12pt</FontSize>
+                  <Format>'$'0.00;('$'0.00)</Format>
+                  <rd:FormatSymbolCulture>es-DO</rd:FormatSymbolCulture>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -376,6 +378,8 @@
                   <FontFamily>Garamond</FontFamily>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Normal</FontWeight>
+                  <Format>'$'0.00;('$'0.00)</Format>
+                  <rd:FormatSymbolCulture>es-DO</rd:FormatSymbolCulture>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -417,6 +421,8 @@
                   <FontStyle>Italic</FontStyle>
                   <FontFamily>garamond</FontFamily>
                   <FontSize>12pt</FontSize>
+                  <Format>'$'0.00;('$'0.00)</Format>
+                  <rd:FormatSymbolCulture>es-DO</rd:FormatSymbolCulture>
                 </Style>
               </TextRun>
             </TextRuns>

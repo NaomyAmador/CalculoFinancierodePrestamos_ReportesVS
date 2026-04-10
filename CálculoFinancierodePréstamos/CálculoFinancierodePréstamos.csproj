@@ -188,10 +188,10 @@
     <Compile Include="Pagos\FrmPago.Designer.cs">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reporte#2\FrmReporteInfoCliente.cs">
+    <Compile Include="Reporte2\FrmReporteInfoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporte#2\FrmReporteInfoCliente.Designer.cs">
+    <Compile Include="Reporte2\FrmReporteInfoCliente.Designer.cs">
       <DependentUpon>FrmReporteInfoCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\FrmLogin.cs">
@@ -281,10 +281,10 @@
     <EmbeddedResource Include="Pagos\FrmPago.resx">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte#2\FrmReporteInfoCliente.resx">
+    <EmbeddedResource Include="Reporte2\FrmReporteInfoCliente.resx">
       <DependentUpon>FrmReporteInfoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\ReporteInfoCliente.rdlc" />
+    <EmbeddedResource Include="Reporte2\ReporteInfoCliente.rdlc" />
     <EmbeddedResource Include="Principal\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

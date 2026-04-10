@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CálculoFinancierodePréstamos.Clientes
+namespace CálculoFinancierodePréstamos.Reporte2
 {
     public partial class FrmReporteInfoCliente : Form
     {
@@ -25,8 +25,9 @@ namespace CálculoFinancierodePréstamos.Clientes
         {
             VerClientes servicio = new VerClientes();
 
-            string user = SesionUsuario.IdUsuarioLogueado;
-
+            
+            reportViewer1.LocalReport.ReportEmbeddedResource =
+                "CálculoFinancierodePréstamos.Reporte2.ReporteInfoCliente.rdlc";
 
             DataTable dtTodo = servicio.ObtenerDatosReportePorIdCliente(IdClienteRecibido);
 
@@ -34,10 +35,17 @@ namespace CálculoFinancierodePréstamos.Clientes
             {
                 reportViewer1.LocalReport.DataSources.Clear();
 
-                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetInfocliente", dtTodo));
-                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetInfoClienteDatosPrestamo", dtTodo));
+                reportViewer1.LocalReport.DataSources.Add(
+                    new ReportDataSource("DataSetInfocliente", dtTodo));
+
+                reportViewer1.LocalReport.DataSources.Add(
+                    new ReportDataSource("DataSetInfoClienteDatosPrestamo", dtTodo));
 
                 reportViewer1.RefreshReport();
+            }
+            else
+            {
+                MessageBox.Show("No hay datos para este cliente");
             }
         }
                         
