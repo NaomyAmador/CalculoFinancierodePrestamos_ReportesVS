@@ -390,6 +390,7 @@
             this.Btn_FrmClientes.TabIndex = 32;
             this.Btn_FrmClientes.Text = "Crear Cliente";
             this.Btn_FrmClientes.UseVisualStyleBackColor = false;
+            this.Btn_FrmClientes.Click += new System.EventHandler(this.Btn_FrmClientes_Click);
             // 
             // FormMenúPrincipal
             // 

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CálculoFinancierodePréstamos.Clientes;
+using CálculoFinancierodePréstamos.Pagos;
+using CálculoFinancierodePréstamos.Prestamos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,18 +22,16 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormSolicitudPréstamos_Click(object sender, EventArgs e)
         {
-            FormSolicitudPréstamos FormBotónNúmero1 = new FormSolicitudPréstamos();
-            FormBotónNúmero1.Owner = this;
-            FormBotónNúmero1.Show();
+            //el null se utilizo aquí porque en el FrmPrestamo recibe valores en una variable.
+            //Como no se usa indique que esta no recibiera nada (se quedara vacía con null, pero no la borré).
+            Prestamo FormBotónNúmero2 = new Prestamo(null);
+            FormBotónNúmero2.Owner = this;
+            FormBotónNúmero2.Show();
             this.Hide();
         }
 
         private void Btn_FormAbonarCuota_Click(object sender, EventArgs e)
         {
-            FormAbonarCuota FormBotónNúmero2 = new FormAbonarCuota();
-            FormBotónNúmero2.Owner = this;
-            FormBotónNúmero2.Show();
-            this.Hide();
         }
 
         private void Btn_FormVerClientes_Click(object sender, EventArgs e)
@@ -54,6 +55,14 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
             Reportes FormBotónNúmero5 = new Reportes();
             FormBotónNúmero5.Owner = this;
             FormBotónNúmero5.Show();
+            this.Hide();
+        }
+
+        private void Btn_FrmClientes_Click(object sender, EventArgs e)
+        {
+            FrmClientes FormBotónNúmero1 = new FrmClientes();
+            FormBotónNúmero1.Owner = this;
+            FormBotónNúmero1.Show();
             this.Hide();
         }
     }
