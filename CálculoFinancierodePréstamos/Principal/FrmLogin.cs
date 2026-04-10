@@ -51,15 +51,10 @@ namespace CálculoFinancierodePréstamos.Principal
             {
                 SesionUsuario.IdUsuarioLogueado = TxtBox_Usuario.Text;
 
-
-                FrmClientes form = new FrmClientes(TxtBox_Usuario.Text);
-
-                //// Esto es solo temporal para probar mi reporte de clientes 
-                //FrmReporteInfoCliente form = new FrmReporteInfoCliente();
-
-
+                //Apartado para que dirija al usuario al menú una vez hecho el login correctamente.
+                FormMenúPrincipal MenúPrincipal = new FormMenúPrincipal();
+                MenúPrincipal.Show();
                 this.Hide();
-                form.Show();
                 Intentos = 3;
             }
             else
