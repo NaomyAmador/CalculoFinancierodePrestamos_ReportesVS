@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewPrestamos = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
+            this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrestamos)).BeginInit();
             this.SuspendLayout();
@@ -53,10 +54,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(915, 277);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(610, 177);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 51);
+            this.label13.Size = new System.Drawing.Size(53, 34);
             this.label13.TabIndex = 45;
             this.label13.Text = "•✦";
             // 
@@ -65,10 +65,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label12.Location = new System.Drawing.Point(1153, 277);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(769, 177);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 51);
+            this.label12.Size = new System.Drawing.Size(36, 34);
             this.label12.TabIndex = 44;
             this.label12.Text = "✦";
             // 
@@ -77,10 +76,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label9.Location = new System.Drawing.Point(1365, 280);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(910, 179);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 51);
+            this.label9.Size = new System.Drawing.Size(53, 34);
             this.label9.TabIndex = 41;
             this.label9.Text = "✦•";
             // 
@@ -89,10 +87,9 @@
             this.Btn_Crear.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Crear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Crear.ForeColor = System.Drawing.Color.White;
-            this.Btn_Crear.Location = new System.Drawing.Point(1212, 271);
-            this.Btn_Crear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Crear.Location = new System.Drawing.Point(808, 173);
             this.Btn_Crear.Name = "Btn_Crear";
-            this.Btn_Crear.Size = new System.Drawing.Size(146, 66);
+            this.Btn_Crear.Size = new System.Drawing.Size(97, 42);
             this.Btn_Crear.TabIndex = 38;
             this.Btn_Crear.Text = "Volver";
             this.Btn_Crear.UseVisualStyleBackColor = false;
@@ -102,10 +99,9 @@
             this.Btn_Buscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(1000, 271);
-            this.Btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Buscar.Location = new System.Drawing.Point(667, 173);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(146, 66);
+            this.Btn_Buscar.Size = new System.Drawing.Size(97, 42);
             this.Btn_Buscar.TabIndex = 37;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = false;
@@ -115,10 +111,9 @@
             // 
             this.Txt_IdCliente.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_IdCliente.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Txt_IdCliente.Location = new System.Drawing.Point(675, 288);
-            this.Txt_IdCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Txt_IdCliente.Location = new System.Drawing.Point(450, 184);
             this.Txt_IdCliente.Name = "Txt_IdCliente";
-            this.Txt_IdCliente.Size = new System.Drawing.Size(234, 43);
+            this.Txt_IdCliente.Size = new System.Drawing.Size(157, 30);
             this.Txt_IdCliente.TabIndex = 33;
             // 
             // label6
@@ -126,10 +121,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(524, 291);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(349, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 36);
+            this.label6.Size = new System.Drawing.Size(89, 22);
             this.label6.TabIndex = 30;
             this.label6.Text = "IdCliente";
             // 
@@ -138,10 +132,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(22, 228);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(15, 146);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(2259, 28);
+            this.label5.Size = new System.Drawing.Size(1459, 18);
             this.label5.TabIndex = 29;
             this.label5.Text = "Prestamos ⋆★⋆ ═══════════════════════════════════════════════════════════════════" +
     "═══════════════════════════════════════════════════════";
@@ -151,10 +144,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(789, 168);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(526, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(468, 30);
+            this.label4.Size = new System.Drawing.Size(283, 20);
             this.label4.TabIndex = 28;
             this.label4.Text = "Siempre apoyando a los Dominicanos";
             // 
@@ -163,10 +155,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label3.Location = new System.Drawing.Point(697, 110);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(465, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(652, 41);
+            this.label3.Size = new System.Drawing.Size(416, 26);
             this.label3.TabIndex = 27;
             this.label3.Text = "∘₊✧─── El Banco de las Ideas ───✧₊∘";
             // 
@@ -175,20 +166,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Underline);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(695, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(463, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(667, 49);
+            this.label2.Size = new System.Drawing.Size(417, 31);
             this.label2.TabIndex = 26;
             this.label2.Text = "Historial de prestamos del cliente";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(141, 119);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
@@ -198,10 +187,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(97, 342);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(65, 219);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(2146, 28);
+            this.label1.Size = new System.Drawing.Size(1392, 18);
             this.label1.TabIndex = 46;
             this.label1.Text = "⋆★⋆ ═════════════════════════════════════════════════════════════════════════════" +
     "═══════════════════════════════════════════ ⋆★⋆";
@@ -209,11 +197,12 @@
             // dataGridViewPrestamos
             // 
             this.dataGridViewPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPrestamos.Location = new System.Drawing.Point(97, 398);
+            this.dataGridViewPrestamos.Location = new System.Drawing.Point(65, 255);
+            this.dataGridViewPrestamos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewPrestamos.Name = "dataGridViewPrestamos";
             this.dataGridViewPrestamos.RowHeadersWidth = 82;
             this.dataGridViewPrestamos.RowTemplate.Height = 33;
-            this.dataGridViewPrestamos.Size = new System.Drawing.Size(2148, 361);
+            this.dataGridViewPrestamos.Size = new System.Drawing.Size(1432, 231);
             this.dataGridViewPrestamos.TabIndex = 47;
             // 
             // label7
@@ -221,20 +210,33 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label7.Location = new System.Drawing.Point(97, 790);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(65, 506);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(2129, 28);
+            this.label7.Size = new System.Drawing.Size(1381, 18);
             this.label7.TabIndex = 48;
             this.label7.Text = "⋆★⋆ ═════════════════════════════════════════════════════════════════════════════" +
     "══════════════════════════════════════════ ⋆★⋆";
             // 
+            // Btn_VolverMenúPrincipal
+            // 
+            this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(969, 180);
+            this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
+            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 32);
+            this.Btn_VolverMenúPrincipal.TabIndex = 49;
+            this.Btn_VolverMenúPrincipal.Text = "Volver al Menú Principal ↺";
+            this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
+            this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
+            // 
             // FrmHistorialPrestamos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(2278, 855);
+            this.ClientSize = new System.Drawing.Size(1283, 547);
+            this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridViewPrestamos);
             this.Controls.Add(this.label1);
@@ -250,6 +252,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmHistorialPrestamos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHistorialPrestamos";
@@ -276,5 +279,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewPrestamos;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
     }
 }

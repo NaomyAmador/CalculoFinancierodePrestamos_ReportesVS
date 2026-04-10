@@ -103,5 +103,11 @@ namespace CálculoFinancierodePréstamos.Reportes
                 MessageBox.Show("Error al generar reporte: " + ex.Message);
             }
         }
+
+        private void Btn_VolverMenúPrincipal_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }

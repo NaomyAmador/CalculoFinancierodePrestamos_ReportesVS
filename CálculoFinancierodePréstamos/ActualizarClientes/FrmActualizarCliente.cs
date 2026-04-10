@@ -170,7 +170,12 @@ namespace CálculoFinancierodePréstamos.ActualizarClientes
 
             reporte.ShowDialog();
         }
-    
+
+        private void Btn_VolverMenúPrincipal_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 
  }       

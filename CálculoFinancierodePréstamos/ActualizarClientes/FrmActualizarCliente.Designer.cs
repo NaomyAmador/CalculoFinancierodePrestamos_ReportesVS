@@ -59,6 +59,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.btn_Reporte2 = new System.Windows.Forms.Button();
+            this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +68,7 @@
             // 
             this.dataGridViewCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCliente.Location = new System.Drawing.Point(612, 260);
-            this.dataGridViewCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewCliente.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewCliente.Name = "dataGridViewCliente";
             this.dataGridViewCliente.RowHeadersWidth = 82;
             this.dataGridViewCliente.RowTemplate.Height = 33;
@@ -279,7 +280,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Location = new System.Drawing.Point(98, 255);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(8, 248);
             this.panel1.TabIndex = 69;
@@ -299,7 +300,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(317, 260);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(214, 22);
             this.txtNombre.TabIndex = 71;
@@ -307,7 +308,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(226, 314);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(305, 22);
             this.txtCorreo.TabIndex = 72;
@@ -315,7 +316,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(226, 369);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(305, 22);
             this.txtDireccion.TabIndex = 73;
@@ -323,7 +324,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(226, 419);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(305, 22);
             this.txtTelefono.TabIndex = 74;
@@ -331,7 +332,7 @@
             // txtSueldo
             // 
             this.txtSueldo.Location = new System.Drawing.Point(278, 473);
-            this.txtSueldo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSueldo.Margin = new System.Windows.Forms.Padding(2);
             this.txtSueldo.Name = "txtSueldo";
             this.txtSueldo.Size = new System.Drawing.Size(253, 22);
             this.txtSueldo.TabIndex = 75;
@@ -385,12 +386,26 @@
             this.btn_Reporte2.UseVisualStyleBackColor = false;
             this.btn_Reporte2.Click += new System.EventHandler(this.btn_Reporte2_Click);
             // 
+            // Btn_VolverMenúPrincipal
+            // 
+            this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(1210, 578);
+            this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
+            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 32);
+            this.Btn_VolverMenúPrincipal.TabIndex = 80;
+            this.Btn_VolverMenúPrincipal.Text = "Volver al Menú Principal ↺";
+            this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
+            this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
+            // 
             // FrmActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1474, 638);
+            this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.btn_Reporte2);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
@@ -421,7 +436,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmActualizarCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmActualizarCliente";
@@ -464,5 +479,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btn_Reporte2;
+        private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
     }
 }

@@ -19,7 +19,7 @@ namespace CálculoFinancierodePréstamos.Clientes
         //Variables en uso
         int Intentos = 3;
         int Tiempo = 0;
-        public FrmClientes(string usuario)
+        public FrmClientes()
         {
             InitializeComponent();
         }
@@ -65,7 +65,8 @@ namespace CálculoFinancierodePréstamos.Clientes
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            this.Owner.Show();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -65,13 +65,16 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(139, 486);
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(71, 486);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 26);
+            this.button3.Size = new System.Drawing.Size(71, 31);
             this.button3.TabIndex = 39;
             this.button3.Text = "Close";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
@@ -232,24 +235,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(375, 486);
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(208, 486);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 26);
+            this.button1.Size = new System.Drawing.Size(238, 31);
             this.button1.TabIndex = 37;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Volver al Menú Principal ↺";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(508, 486);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 26);
+            this.button2.Size = new System.Drawing.Size(71, 31);
             this.button2.TabIndex = 38;
             this.button2.Text = "Crear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
@@ -268,7 +277,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(86, 483);
+            this.label13.Location = new System.Drawing.Point(12, 483);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 34);
             this.label13.TabIndex = 40;
@@ -290,7 +299,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label14.Location = new System.Drawing.Point(318, 483);
+            this.label14.Location = new System.Drawing.Point(149, 483);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 34);
             this.label14.TabIndex = 42;

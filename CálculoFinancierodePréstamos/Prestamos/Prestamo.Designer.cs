@@ -76,6 +76,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cuotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -193,7 +194,7 @@
             // btn_calcular
             // 
             this.btn_calcular.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_calcular.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_calcular.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_calcular.ForeColor = System.Drawing.Color.White;
             this.btn_calcular.Location = new System.Drawing.Point(879, 447);
             this.btn_calcular.Name = "btn_calcular";
@@ -567,11 +568,25 @@
             this.pictureBox2.TabIndex = 80;
             this.pictureBox2.TabStop = false;
             // 
+            // Btn_VolverMenúPrincipal
+            // 
+            this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(879, 497);
+            this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
+            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(289, 32);
+            this.Btn_VolverMenúPrincipal.TabIndex = 81;
+            this.Btn_VolverMenúPrincipal.Text = "Volver al Menú Principal ↺";
+            this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
+            this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
+            // 
             // Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 1011);
+            this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.dtp_FechaPrimerPago);
@@ -679,5 +694,6 @@
         private System.Windows.Forms.DateTimePicker dtp_FechaPrimerPago;
         private System.Windows.Forms.Button btn_Limpiar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
     }
 }

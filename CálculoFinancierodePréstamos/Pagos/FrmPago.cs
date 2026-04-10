@@ -109,6 +109,12 @@ namespace CálculoFinancierodePréstamos.Pagos
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void Btn_VolverMenúPrincipal_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }
     

@@ -41,6 +41,7 @@
             this.btn_Reporte4 = new System.Windows.Forms.Button();
             this.btn_Reporte3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.Btn_VolverMenúPrincipal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -186,11 +187,25 @@
     "2 cuando ves la información del cliente):\r\n\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Btn_VolverMenúPrincipal
+            // 
+            this.Btn_VolverMenúPrincipal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_VolverMenúPrincipal.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VolverMenúPrincipal.ForeColor = System.Drawing.Color.White;
+            this.Btn_VolverMenúPrincipal.Location = new System.Drawing.Point(342, 545);
+            this.Btn_VolverMenúPrincipal.Name = "Btn_VolverMenúPrincipal";
+            this.Btn_VolverMenúPrincipal.Size = new System.Drawing.Size(252, 32);
+            this.Btn_VolverMenúPrincipal.TabIndex = 18;
+            this.Btn_VolverMenúPrincipal.Text = "Volver al Menú Principal ↺";
+            this.Btn_VolverMenúPrincipal.UseVisualStyleBackColor = false;
+            this.Btn_VolverMenúPrincipal.Click += new System.EventHandler(this.Btn_VolverMenúPrincipal_Click);
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 609);
+            this.Controls.Add(this.Btn_VolverMenúPrincipal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -225,5 +240,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Btn_VolverMenúPrincipal;
     }
 }
