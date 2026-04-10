@@ -27,6 +27,7 @@ namespace CálculoFinancierodePréstamos.Pagos
 
         private void Btn_Continuar_Click(object sender, EventArgs e)
         {
+           
             idPrestamo = busquedaAD.ObtenerIdPrestamo(txtUsuario.Text, txtNombreCliente.Text );
 
             if (idPrestamo == 0)
