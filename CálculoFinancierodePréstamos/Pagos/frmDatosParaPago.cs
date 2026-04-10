@@ -37,8 +37,9 @@ namespace CálculoFinancierodePréstamos.Pagos
 
             else
             {
-                FrmPago form = new FrmPago(idPrestamo);
-                form.Show();
+                FrmPago DirigirseFormPago = new FrmPago(idPrestamo);
+                DirigirseFormPago.Show();
+                this.Hide();
             }
         }
     }
