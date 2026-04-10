@@ -65,14 +65,7 @@ namespace CálculoFinancierodePréstamos.Clientes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //LogicaNegocio_Clientes lNClientes = new LogicaNegocio_Clientes();
-            //Entidades.Clientes clientes = new Entidades.Clientes();
-            FrmLogin login = new FrmLogin();
-            login.Show();
-            this.Close();
-           
-
-
+        
         }
 
         private void button3_Click(object sender, EventArgs e)
