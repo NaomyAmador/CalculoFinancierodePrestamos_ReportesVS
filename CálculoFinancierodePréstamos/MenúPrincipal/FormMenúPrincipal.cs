@@ -3,6 +3,7 @@ using CálculoFinancierodePréstamos.Clientes;
 using CálculoFinancierodePréstamos.HistorialPrestamosForms;
 using CálculoFinancierodePréstamos.Pagos;
 using CálculoFinancierodePréstamos.Prestamos;
+using CálculoFinancierodePréstamos.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,9 +59,9 @@ namespace CálculoFinancierodePréstamos.MenúPrincipal
 
         private void Btn_FormReportes_Click(object sender, EventArgs e)
         {
-            Reportes FormBotónNúmero5 = new Reportes();
-            FormBotónNúmero5.Owner = this;
-            FormBotónNúmero5.Show();
+            FrmReportes FormBotónNúmero6 = new FrmReportes();
+            FormBotónNúmero6.Owner = this;
+            FormBotónNúmero6.Show();
             this.Hide();
         }
 
